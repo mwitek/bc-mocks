@@ -40,17 +40,23 @@
     <a href="/home" class="header_logo"></a>
   </div>
 </header>
-    <section>
+    <section class="content">
+      <h1>Explore thousands of offers from your favorite brands</h1>
+      <div class="offer_search_wrapper">
+        <form class="offer_search">
+          <input type="text" placeholder="keyword" class="keyword"/>
+          <input type="text" placeholder="postcode" class="location"/>
+          <span class="search_btn">Search offers <span class="icon">z</span></span>
+        </form>
+      </div>
       <ul class="featured_offer_rotator">
         <li><image src="stylesheets/assets/V5-images/virgin-offer.png" /></li>
         <li><image src="stylesheets/assets/V5-images/ba-offer.png" /></li>
         <li><image src="stylesheets/assets/V5-images/ob-offer.png" /></li>
       </ul>
       <div class="gallery_nav">
-        <ul>
-          <li class="prev_btn">Previous</li>
-          <li class="next_btn">Next</li>
-        </ul>
+        <span class="prev_btn icon"><</span>
+        <span class="next_btn icon">></span>
       </div>
     </section>
   
@@ -105,8 +111,8 @@
     <script>
       $(document).ready(function() {
         $('.featured_offer_rotator').roundabout({
-          autoplay: false,
-          autoplayDuration: 5000,
+          autoplay: true,
+          autoplayDuration: 8000,
           btnPrev: '.prev_btn',
           btnNext: '.next_btn'
 
