@@ -130,7 +130,7 @@
 
 /* change the width of the slider in your own responsive media query */
 @media only screen and (min-width: 960px) {
-	.oneByOne1, #banner .oneByOne_item img{
+	.oneByOne1, #banner .oneByOne_item > img{
 		width: 960px;
 	}
 }

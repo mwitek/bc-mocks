@@ -13,20 +13,129 @@
 	background: white;
 }
 
+
 .v6{
 
-	h1{
-		font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif; 
-		color: white;
-		font-size: 2.5em;
-		line-height: 1.2;
-		width: 430px;
-		float: left;
-		margin-right: 20px;
-		margin-left: 20px;
-		padding-right: 20px;
-		box-sizing: border-box;
+    h1{
+    font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif; 
+    color: white;
+    font-size: 2.5em;
+    line-height: 1.2;
+    width: 430px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+    .slide1 &,
+    .slide2 &{
+      float: left;
+    }
+  }
+
+  .slide3 h1{
+    text-align: center;
+    margin: 0 auto .6em;
+    float: none;
+    width: 500px;
+  }
+
+  .slide3{
+    text-align: center;
+    padding-top: 160px;
+    position: relative;
+
+    .cat-icons{
+      position: absolute;
+      top: 1px;
+
+      img{
+        position:absolute;
+      }
+
+      .icon1{
+        top: 360px;
+        left: 600px;
+      }
+      .icon2{
+        top: 300px;
+        left: 750px;
+      }
+      .icon3{
+        top: 200px;
+        left: 850px;
+      }
+      .icon4{
+        top: 90px;
+        left: 780px;
+      }
+      .icon5{
+        top: 40px;
+        left: 650px;
+      }
+      .icon6{
+        top: 20px;
+        left: 540px;
+      }
+      .icon7{
+        top: 20px;
+        left: 390px;
+      }
+      .icon8{
+        top: 30px;
+        left: 230px;
+      }
+      .icon9{
+        top: 60px;
+        left: 110px;
+      }
+      .icon10{
+        top: 130px;
+        left: 5px;
+      }
+      .icon11{
+        top: 260px;
+        left: 60px;
+      }
+      .icon12{
+        top: 300px;
+        left: 190px;
+      }
+    }
+  }// end .slide3
+
+  a.explore{
+    @include button;
+    font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 1.8em !important;
+    background-image: #f0f2f3;
+    background-image: -webkit-linear-gradient(bottom right, rgb(224,228,231) 0%, rgb(255,255,255) 100%);
+    position: relative;
+    padding-left: 40px;
+    text-align: left;
+    width: 320px;
+    @include box-shadow(3px 3px 4px (0, 0, 0, .6));
+    span.icon{
+      position: absolute;
+      right: 50px;
+      top: 12px;
+      text-align: right;
+      float: right;
+    }
+  }
+  .slide3 .explore{
+    margin: 0 auto;
+    display: inline-block;
+    float: none;
+  }
+
+	.slide1{
+		background: url(assets/slide1bg.png) center top no-repeat;
+		padding-top: 160px;
 	}
+
 	form{
 		width: 340px;
 		float: left;
@@ -41,26 +150,19 @@
 			padding: .5em;
 			color: $bc1 ;
 		}
-		a.explore{
-			@include button;
-			font-size: 1.8em !important;
-			background-image: #f0f2f3;
-			background-image: -webkit-linear-gradient(bottom right, rgb(224,228,231) 0%, rgb(255,255,255) 100%);
-			position: relative;
-			padding-left: 40px;
-			text-align: left;
-			@include box-shadow(3px 3px 4px (0, 0, 0, .6));
-			span.icon{
-				position: absolute;
-				right: 50px;
-				top: 12px;
-				text-align: right;
-				float: right;
-			}
-		}
 	}
-	.slide1{
-		background: url(assets/slide1bg.png) center top no-repeat;
-		padding-top: 160px;
+
+	img.logo-grid{
+		width: 400px !important;
+		float: left;
+		margin-top: 100px;
+    margin-right: 20px;
 	}
-}
+	.slide2 h1{
+		margin-top: 130px;
+	}
+
+  .slide2 .explore{
+    margin-left: 20px;
+  }
+}// end .v6

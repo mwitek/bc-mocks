@@ -127,7 +127,7 @@ textarea {
 
 /*this is a light gray box used everywhere*/
 /*typography*/
-.v6 form a.explore {
+.v6 a.explore {
   font-family: "BarclaycardCoLtRegular", Tahoma, "Helvetica Neue", Helvetica, Arial Unicode MS, Arial, sans-serif;
   font-weight: 300; }
 
@@ -157,11 +157,119 @@ textarea {
   font-size: 2.5em;
   line-height: 1.2;
   width: 430px;
-  float: left;
   margin-right: 20px;
   margin-left: 20px;
   padding-right: 20px;
   box-sizing: border-box; }
+  .slide1 .v6 h1, .slide2 .v6 h1 {
+    float: left; }
+.v6 .slide3 h1 {
+  text-align: center;
+  margin: 0 auto .6em;
+  float: none;
+  width: 500px; }
+.v6 .slide3 {
+  text-align: center;
+  padding-top: 160px;
+  position: relative; }
+  .v6 .slide3 .cat-icons {
+    position: absolute;
+    top: 1px; }
+    .v6 .slide3 .cat-icons img {
+      position: absolute; }
+    .v6 .slide3 .cat-icons .icon1 {
+      top: 360px;
+      left: 600px; }
+    .v6 .slide3 .cat-icons .icon2 {
+      top: 300px;
+      left: 750px; }
+    .v6 .slide3 .cat-icons .icon3 {
+      top: 200px;
+      left: 850px; }
+    .v6 .slide3 .cat-icons .icon4 {
+      top: 90px;
+      left: 780px; }
+    .v6 .slide3 .cat-icons .icon5 {
+      top: 40px;
+      left: 650px; }
+    .v6 .slide3 .cat-icons .icon6 {
+      top: 20px;
+      left: 540px; }
+    .v6 .slide3 .cat-icons .icon7 {
+      top: 20px;
+      left: 390px; }
+    .v6 .slide3 .cat-icons .icon8 {
+      top: 30px;
+      left: 230px; }
+    .v6 .slide3 .cat-icons .icon9 {
+      top: 60px;
+      left: 110px; }
+    .v6 .slide3 .cat-icons .icon10 {
+      top: 130px;
+      left: 5px; }
+    .v6 .slide3 .cat-icons .icon11 {
+      top: 260px;
+      left: 60px; }
+    .v6 .slide3 .cat-icons .icon12 {
+      top: 300px;
+      left: 190px; }
+.v6 a.explore {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
+  -webkit-transition: all 0.4s ease-out;
+  /* Saf3.2+, Chrome */
+  -moz-transition: all 0.4s ease-out;
+  /* FF3.7+ */
+  -o-transition: all 0.4s ease-out;
+  /* Opera 10.5 */
+  transition: all 0.4s ease-out;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1.2;
+  padding: .4em 1em;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 1.8em !important;
+  background-image: #f0f2f3;
+  background-image: -webkit-linear-gradient(bottom right, #e0e4e7 0%, white 100%);
+  position: relative;
+  padding-left: 40px;
+  text-align: left;
+  width: 320px;
+  -moz-box-shadow: 3px 3px 4px 0, 0, 0, 0.6;
+  -webkit-box-shadow: 3px 3px 4px 0, 0, 0, 0.6;
+  box-shadow: 3px 3px 4px 0, 0, 0, 0.6; }
+  .v6 a.explore:hover {
+    text-decoration: none; }
+  .v6 a.explore span.icon {
+    position: absolute;
+    right: 50px;
+    top: 12px;
+    text-align: right;
+    float: right; }
+.v6 .slide3 .explore {
+  margin: 0 auto;
+  display: inline-block;
+  float: none; }
+.v6 .slide1 {
+  background: url(assets/slide1bg.png) center top no-repeat;
+  padding-top: 160px; }
 .v6 form {
   width: 340px;
   float: left; }
@@ -175,52 +283,12 @@ textarea {
     margin-bottom: 1em;
     padding: .5em;
     color: #0d95e3; }
-  .v6 form a.explore {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-    -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
-    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
-    -webkit-transition: all 0.4s ease-out;
-    /* Saf3.2+, Chrome */
-    -moz-transition: all 0.4s ease-out;
-    /* FF3.7+ */
-    -o-transition: all 0.4s ease-out;
-    /* Opera 10.5 */
-    transition: all 0.4s ease-out;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1em;
-    line-height: 1.2;
-    padding: .4em 1em;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.8em !important;
-    background-image: #f0f2f3;
-    background-image: -webkit-linear-gradient(bottom right, #e0e4e7 0%, white 100%);
-    position: relative;
-    padding-left: 40px;
-    text-align: left;
-    -moz-box-shadow: 3px 3px 4px 0, 0, 0, 0.6;
-    -webkit-box-shadow: 3px 3px 4px 0, 0, 0, 0.6;
-    box-shadow: 3px 3px 4px 0, 0, 0, 0.6; }
-    .v6 form a.explore:hover {
-      text-decoration: none; }
-    .v6 form a.explore span.icon {
-      position: absolute;
-      right: 50px;
-      top: 12px;
-      text-align: right;
-      float: right; }
-.v6 .slide1 {
-  background: url(assets/slide1bg.png) center top no-repeat;
-  padding-top: 160px; }
+.v6 img.logo-grid {
+  width: 400px !important;
+  float: left;
+  margin-top: 100px;
+  margin-right: 20px; }
+.v6 .slide2 h1 {
+  margin-top: 130px; }
+.v6 .slide2 .explore {
+  margin-left: 20px; }
