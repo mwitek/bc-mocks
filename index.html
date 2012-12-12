@@ -12,6 +12,7 @@
     <title>Bc-mocks</title>
     <link rel="stylesheet" href="stylesheets/application.css">
     <link rel="stylesheet" href="stylesheets/main-styles.css">
+    <link rel="stylesheet" href="stylesheets/jquery.onebyone.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,34 +40,36 @@
     <a href="/home" class="header_logo"></a>
   </div>
 
-  <div class="nav_full_width">
-  <div class="nav_container">
-    <nav class="user_nav"><!--Logged out nav-->
-      <ul>
-        <li>
-          <a href="#consumer" class="home active"><span class="home_icon">k</span>Home</a>
-        </li>
-        <li>
-          <a href="#consumer/offers/explore" class="explore_offers "><span class="explore_icon">></span>Explore offers</a>
-        </li>
-      </ul>
-    </nav>
-      <form class="offer_search">
-        <span class="search_icon">z</span>
-        <input type="text" placeholder="I am looking for" class="keyword"/>
-        <input type="text" placeholder="location" class="location"/>
-        <input class="search_btn" type="button" value="Search"/>
-      </form>
-    <div class="clear"></div>
-  </div>
-</div>
+      <!-- BEGIN SLIDER -->
+      <section id="slider">
+        
+        <div class="content">
+            <div id="banner">         
+              <div class="oneByOne_item">
+             
+              </div>
+              
+              
+              <div class="oneByOne_item">
+               
+              </div>
+              
+              
+              <div class="oneByOne_item">
+               
+              </div>            
+            </div>
+        </div>
+        
+      </section>
+      <!-- END SLIDER -->
 
 
 </header>
 
   
   <div id="analog_analytics" class="content">
-    <h1>Bespoke offers brings you the best offers uniquely tailored for you. Tell us what you like and we'll show you the offers you want.  It's that simple. <a href="/consumer/sign_up">Sign up now, it&#x27;s free!</a> </h1>
+
   </div>
   <!-- END #analog_analytics -->
   <div class="clear"></div>
@@ -110,4 +113,25 @@
   </div>
 </footer>
 </body>
+<script type="text/javascript" src="javascripts/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.onebyone.js"></script>
+  <script type="text/javascript"> 
+    $(document).ready(function(){
+      $('#banner').oneByOne({
+        className: 'oneByOne1',
+        sliderClassName: 'oneByOne_item',
+        pauseByHover: true,              
+        easeType: 'random',
+        width: 940, 
+        height: 470,
+        showButton: false,
+        enableDrag: true,
+        showArrow: true,
+        slideShow: true,
+        responsive: true,
+        minWidth: 0
+      });
+    })
+  </script>
+
 </html>

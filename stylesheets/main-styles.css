@@ -19,3 +19,8 @@
   src: url("fonts/bespoke-icons.eot?#iefix") format("embedded-opentype"), url("fonts/bespoke-icons.woff") format("woff"), url("fonts/bespoke-icons.ttf") format("truetype"), url("fonts/bespoke-icons.svg#bespokeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+#slider {
+  background: url("assets/slider-bg.jpg") repeat-x; }
+  #slider .content {
+    padding: 0px; }
