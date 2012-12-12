@@ -37,7 +37,7 @@
       span{
         display: block;
         float: left;
-        margin-right: .3em;
+        margin-right: .5em;
         opacity: 0;
       }
       span:nth-of-type(1){
@@ -217,7 +217,46 @@
 	}
 	h1{
 		text-align: center;
+    overflow: hidden;
+    margin-left: 2em;
+    span{
+      display: block;
+      float: left;
+      margin-right: .4em;
+      opacity: 0;
+    }
+    span:nth-of-type(1){
+       -webkit-animation:flipInY 800ms linear 0 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+    span:nth-of-type(2){
+       -webkit-animation:flipInY 800ms linear 200ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+    span:nth-of-type(3){
+       -webkit-animation:flipInY 800ms linear 800ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+    span:nth-of-type(4){
+       -webkit-animation:flipInY 800ms linear 1000ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+    span:nth-of-type(5){
+       -webkit-animation:flipInY 800ms linear 1400ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
 	}
+
+  input,
+  .search_btn{
+    font-family: "BarclaycardCoLtRegular", tahoma, sans-serif;
+    font-size: 1.4em !important;
+  }
+
+  .search_btn{
+    font-size: 1.2em;
+    padding: .2em 1em .3em 1em !important;
+  }
 	.featured_offer_rotator {
 		list-style: none;
 		padding: 0;
