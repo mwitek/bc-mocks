@@ -16,7 +16,7 @@
 
 .v6{
 
-    h1{
+  h1{
     font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif; 
     color: white;
     font-size: 2.5em;
@@ -26,11 +26,11 @@
     margin-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
+  }
 
-    .slide1 &,
-    .slide2 &{
-      float: left;
-    }
+  .slide1 h1,
+  .slide2 h1{
+    float: left;
   }
 
   .slide3 h1{
@@ -132,7 +132,7 @@
   }
 
 	.slide1{
-		background: url(assets/slide1bg.png) center top no-repeat;
+		background: url(assets/slide1bg.png) right top no-repeat;
 		padding-top: 160px;
 	}
 
@@ -155,7 +155,7 @@
 	img.logo-grid{
 		width: 400px !important;
 		float: left;
-		margin-top: 100px;
+		margin-top: 70px;
     margin-right: 20px;
 	}
 	.slide2 h1{

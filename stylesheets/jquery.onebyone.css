@@ -53,32 +53,26 @@
 .arrowButton{    
 	cursor: pointer;  
 }            
-.arrowButton .prevArrow{
-	display: block; 
-	width: 35px;
-	height: 90px; 
-	background: url(assets/nav-slider.png) no-repeat 0 -90px; 
-	position: absolute; 
-	left: 0; 
-	top: 195px;
+.arrowButton .prevArrow,
+.arrowButton .nextArrow{
+	color: white;
+	display: block;
+	font-size: 2em;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	cursor: pointer;
 	margin-top: -30px;
-	cursor: pointer; 
-	text-indent: -9999px;       
+	top: 195px;
+}
+.arrowButton .prevArrow{
+	left: -30px; 
 }
 .arrowButton .prevArrow:hover {
 	background-position:-35px -90px;
 } 
 .arrowButton .nextArrow{                 
-	display: block; 
-	width: 35px;
-	height: 90px; 
-	background: url(assets/nav-slider.png) no-repeat 0 0; 
-	position: absolute; 
-	right: 0; 
-	top: 195px;
-	margin-top: -30px;
-	cursor: pointer; 
-	text-indent: -9999px;	          
+	right: -30px; 
 } 
 .arrowButton .nextArrow:hover {
 	background-position: -35px 0;

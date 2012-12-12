@@ -222,7 +222,7 @@
 
         // add the previous/next arrow buttons
 		if(settings.showArrow){
-			arrowButton = $('<div class="arrowButton"><div class="prevArrow"></div><div class="nextArrow"></div></div>');
+			arrowButton = $('<div class="arrowButton"><div class="prevArrow"><span class="icon"><</span></div><div class="nextArrow"><span class="icon">></span></div></div>');
 			parent.append(arrowButton);
             var _next = $('.nextArrow', arrowButton).bind('click', function(event) {
 				nextBanner();

@@ -161,8 +161,9 @@ textarea {
   margin-left: 20px;
   padding-right: 20px;
   box-sizing: border-box; }
-  .slide1 .v6 h1, .slide2 .v6 h1 {
-    float: left; }
+.v6 .slide1 h1,
+.v6 .slide2 h1 {
+  float: left; }
 .v6 .slide3 h1 {
   text-align: center;
   margin: 0 auto .6em;
@@ -268,7 +269,7 @@ textarea {
   display: inline-block;
   float: none; }
 .v6 .slide1 {
-  background: url(assets/slide1bg.png) center top no-repeat;
+  background: url(assets/slide1bg.png) right top no-repeat;
   padding-top: 160px; }
 .v6 form {
   width: 340px;
@@ -286,7 +287,7 @@ textarea {
 .v6 img.logo-grid {
   width: 400px !important;
   float: left;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-right: 20px; }
 .v6 .slide2 h1 {
   margin-top: 130px; }
