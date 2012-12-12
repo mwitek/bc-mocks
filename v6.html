@@ -19,7 +19,7 @@
     <![endif]-->
 </head>
 
-<body class="consumer">
+<body class="consumer v6">
 
 <div class="center page_wrap">
   
@@ -45,8 +45,13 @@
         
         <div class="content">
             <div id="banner">         
-              <div class="oneByOne_item">
-             
+              <div class="oneByOne_item slide1">
+                <h1>Explore thousands of offers from your favorite brands</h1>
+                <form>
+                  <fieldset>
+                    <input type="text" placeholder="keyword">
+                    <input type="text" placeholder="postcode">
+                    <input type="submit" class="explore" value="Explore offers">
               </div>
               
               
@@ -127,9 +132,9 @@
         showButton: false,
         enableDrag: true,
         showArrow: true,
-        slideShow: true,
+        slideShow: false,
         responsive: true,
-        minWidth: 0
+        minWidth: 960
       });
     })
   </script>

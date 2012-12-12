@@ -1,0 +1,273 @@
+/*
+Template Name: Mixins
+Template Description: Global mixins
+Author: Analog Analytics
+Version: 1.0
+*/
+
+/*README: this file is the mixins partial to be imported (@import "mixins";) */
+
+// !grid ********************************************
+
+// Choose a grid width, the number of columns and the margin between columns. The result of the following equation has to be an integer, not a fraction: (width - (columns - 1) * col_margin) / columns = N
+$grid_width: 100%; // total with of page
+
+$columns: 12; // number of columns
+
+$col_margin: 2%; // margin between columns, math magic 
+
+$col_width: ($grid_width - ($col_margin * ($columns))) / $columns; 
+
+$col_total_width: $col_width + $col_margin; 
+
+// create row div
+@mixin row() {
+  clear:both;
+  overflow: visible; // can't do overflow:hidden because of tooltips--have to use clear divs unfortunately
+  width:$grid_width;
+}
+
+//create a column div 
+@mixin col($n: 1) {
+  float:left;
+}
+
+//make an element span n columns 
+@mixin span($n: 1) {
+  width:($n * $col_width) + (($n - 1) * $col_margin);
+  @if $n == $columns { 
+   margin-right: 0;
+  } @else {
+    margin-right:$col_margin;
+  }
+}
+
+//the last column in a row needs this 
+@mixin last() {
+  margin-right:0;
+}
+
+//prepend n blank columns 
+@mixin prepend($n: 1) {
+  margin-left:$col_total_width * $n;
+}
+
+//append n blank columns 
+@mixin append($n: 1) {
+  margin-right:$col_total_width * $n + $col_margin;
+}
+
+@mixin letter_pressed ($text-color){
+    text-shadow: 0 1px 0px lighten($text-color, 20%), 0 -1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* @include letter_pressed_med; */
+@mixin letter_pressed_med($text-color){
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* @include letter_pressed_light; */
+@mixin letter_pressed_light{
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* @include text_shadow($color); */
+@mixin text_shadow($shadow: 1px 1px 1px, $color: rgba(0, 0, 0, 0.3)){
+    text-shadow: $shadow $color;
+}
+
+/* @include border-radius(4px); */
+@mixin border-radius($radius: 4px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+         -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/* @include icon(p)*/
+@mixin icon($color, $font-size) {
+  color: $color;
+  font-family: 'bespoke-icons', Tahoma, "Helvetica Neue", Helvetica, Arial Unicode MS, Arial, sans-serif;
+  font-size-adjust: .99; //adjusts icons size in firefox
+  font-size: $font-size;
+  line-height: 1;
+  position: relative;
+}
+
+/*BOX SHADOW--------------------------------*/
+/* single shadow:
+@include box-shadow(5px 5px 10px #000);
+
+inset shadow:
+@include box-shadow(2px 2px 3px rgba(0,0,0,.2) inset);
+
+double shadow--note the extra parenthesis:
+@include box-shadow((2px 2px 3px rgba(0,0,0,.2) inset, 2px 2px 3px black));
+ */
+@mixin box-shadow($shadow) {
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    box-shadow:$shadow;
+}
+/*BOX SIZING--------------------------------*/
+/* @include boxSizing(border-box); */
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  -ms-box-sizing: $type;
+  -o-box-sizing: $type;
+  box-sizing: $type;
+}
+
+/*TRANSITION--------------------------------*/
+/*@include transition(color, 0.4s, ease-out);*/
+@mixin transition($property:all, $duration:0.4s, $function: ease-out){
+    -webkit-transition: $property $duration $function;  /* Saf3.2+, Chrome */
+       -moz-transition: $property $duration $function;  /* FF3.7+ */
+         -o-transition: $property $duration $function;  /* Opera 10.5 */
+            transition: $property $duration $function;
+}
+
+@mixin button($font-size: 1em, $radius: 4px){
+    @include box-sizing;
+    @include border-radius ($radius);
+    @include box-shadow((0px 1px 2px rgba(0, 0, 0, .1), 0px 0px 5px rgba(0, 0, 0, .1) inset));
+    @include transition;
+    @extend %barclay_lt;
+    border: none;
+    cursor: pointer;
+    display: inline-block; // ensures anchor links stlyed to look like buttons will display correctly--override for individual buttons
+    font-size: $font-size;
+    line-height: 1.2;
+    padding: .4em 1em;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+}
+
+@mixin gradient($fallback, $gradient, $filter){
+    background: $fallback;
+    background: -webkit-linear-gradient($gradient);
+    background: -moz-linear-gradient($gradient);
+    background: -o-linear-gradient($gradient);
+    background: -ms-linear-gradient($gradient);
+    background: linear-gradient($gradient);
+    filter: $filter;
+}
+
+@mixin notice_box($color: #ccc){
+  background:$color;
+  @include border-radius(4px);
+  color: saturate(darken($color, 45%),20%);
+  border: 1px solid darken($color,8%);
+  padding:15px;
+  max-width:600px;
+  margin: 20px auto;
+  text-align: center;
+  a{
+    color:saturate(darken($color, 45%),20%);
+  }
+
+}
+
+@mixin rotate($angle, $ie-angle) {
+  /* Safari */
+  -webkit-transform: rotate($angle);
+  /* Firefox */
+  -moz-transform: rotate($angle);
+  /* IE */
+  -ms-transform: rotate($angle);
+  /* Opera */
+  -o-transform: rotate($angle);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
+}
+
+@mixin roundel($size: 100px, $font-size: 46px){
+  @include border-radius($size/2);
+  @extend %barclay_lt;
+  background: $bc4;
+  color: white;
+  font-size: $font-size;
+  padding: 0;
+  width: $size;
+  height: $size;
+  overflow: hidden;
+  span.discount{
+    float: left;
+    margin: .5em 1px 1px .3em;
+  }
+  > div{
+    float: left;
+    margin-top: .6em;
+    width: 25%;
+  }
+  span.percent{
+    font-size: $font-size/2.3;
+    float: left;
+  }
+  span.off{
+    font-size: $font-size/3;
+    float: left;
+  }
+}
+
+//margins must be present on elements for top, bottom, and top-bottom to work
+//elements cannot have overflow:hidden;
+//make sure for IE 7 and 8 you add a border to the element since shadows don't work there
+@mixin curved-shadow($direction){
+  background: white;
+  position: relative;
+  &::before{
+    @include box-shadow(0 0 15px rgba(0, 0, 0, 0.3));
+    content: "";
+    position: absolute;
+    z-index: -2;
+    @if $direction == left {
+      -moz-border-radius:10px / 100px;
+      border-radius:10px / 100px;
+      top: 10px;
+      bottom: 10px;
+      left:0;
+      right:50%;
+    } @else if $direction == right{
+      -moz-border-radius:10px / 100px;
+      border-radius:10px / 100px;
+      top: 10px;
+      bottom: 10px;
+      left:50%;
+      right:0;    
+    } @else if $direction == left-right{
+      -moz-border-radius:10px / 100px;
+      border-radius:10px / 100px;
+      top: 10px;
+      bottom: 10px;
+      left:0;
+      right:0;   
+    } @else if $direction == top{
+      -moz-border-radius:100px / 10px;
+      border-radius:100px / 10px;
+      top:0;
+      bottom:50%;
+      left:10px;
+      right:10px;
+    } @else if $direction == bottom{
+      -moz-border-radius:100px / 10px;
+      border-radius:100px / 10px;
+      top:50%;
+      bottom:0; 
+      left:10px;
+      right:10px;
+    } @else if $direction == top-bottom{
+      -moz-border-radius:100px / 10px;
+      border-radius:100px / 10px;
+      top:0;
+      bottom:0;
+      left:10px;
+      right:10px;
+    }
+  }
+}

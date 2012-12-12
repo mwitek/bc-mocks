@@ -20,6 +20,125 @@
   font-weight: normal;
   font-style: normal; }
 
+/*
+Template Name: Mixins
+Template Description: Global mixins
+Author: Analog Analytics
+Version: 1.0
+*/
+/*README: this file is the mixins partial to be imported (@import "mixins";) */
+/* @include letter_pressed_med; */
+/* @include letter_pressed_light; */
+/* @include text_shadow($color); */
+/* @include border-radius(4px); */
+/* @include icon(p)*/
+/*BOX SHADOW--------------------------------*/
+/* single shadow:
+@include box-shadow(5px 5px 10px #000);
+
+inset shadow:
+@include box-shadow(2px 2px 3px rgba(0,0,0,.2) inset);
+
+double shadow--note the extra parenthesis:
+@include box-shadow((2px 2px 3px rgba(0,0,0,.2) inset, 2px 2px 3px black));
+ */
+/*BOX SIZING--------------------------------*/
+/* @include boxSizing(border-box); */
+/*TRANSITION--------------------------------*/
+/*@include transition(color, 0.4s, ease-out);*/
+/*
+Template Name: Variabiles
+Template Description: Global variables for anything
+Author: Analog Analytics
+Version: 1.0
+*/
+/*This need some organization but it's a start*/
+/*
+Template Name: Mixins
+Template Description: Global mixins
+Author: Analog Analytics
+Version: 1.0
+*/
+/*README: this file is the mixins partial to be imported (@import "mixins";) */
+/* @include letter_pressed_med; */
+/* @include letter_pressed_light; */
+/* @include text_shadow($color); */
+/* @include border-radius(4px); */
+/* @include icon(p)*/
+/*BOX SHADOW--------------------------------*/
+/* single shadow:
+@include box-shadow(5px 5px 10px #000);
+
+inset shadow:
+@include box-shadow(2px 2px 3px rgba(0,0,0,.2) inset);
+
+double shadow--note the extra parenthesis:
+@include box-shadow((2px 2px 3px rgba(0,0,0,.2) inset, 2px 2px 3px black));
+ */
+/*BOX SIZING--------------------------------*/
+/* @include boxSizing(border-box); */
+/*TRANSITION--------------------------------*/
+/*@include transition(color, 0.4s, ease-out);*/
+/*Fixed width div defaults*/
+/*BRAND COLORS (_bc) */
+/*primary brand color default: blue*/
+/*secondary brand color default: dark-ish gray */
+/*complementary brand color default: green */
+/*complementary brand color default: purple */
+/*complementary brand color default: light gray */
+/*primary brand color gradient*/
+/*primary brand color gradient alternate (more subtle gradient)*/
+/*secondary brand color gradient*/
+/*complementary brand color gradient --green */
+/*darker gray gradient used for disabled buttons*/
+/*default: light gray*/
+/*default: light gray*/
+/* alert gradient*/
+/*footer gradient--it's dark blue */
+/*COLOR APPLICATIONS*/
+/*default font for everything*/
+html,
+button,
+input,
+select,
+textarea {
+  font-family: Tahoma, "Helvetica Neue", Helvetica, Arial Unicode MS, Arial, sans-serif;
+  font-weight: 300; }
+
+.button_emphasis {
+  background: white;
+  position: relative;
+  display: inline-block;
+  margin: .8em 0;
+  padding: .6em 0; }
+  .button_emphasis::before {
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    content: "";
+    position: absolute;
+    z-index: -2;
+    -moz-border-radius: 100px/10px;
+    border-radius: 100px/10px;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px; }
+
+/*this is a light gray box used everywhere*/
+/*typography*/
+.icon {
+  font-family: "bespoke-icons", Tahoma, "Helvetica Neue", Helvetica, Arial Unicode MS, Arial, sans-serif;
+  font-size-adjust: .64;
+  font-size: 1.2em;
+  line-height: 1;
+  /*     top: 4px; */
+  left: .5em;
+  position: absolute; }
+
+.button-with-icon {
+  padding-left: 2.2em; }
+
 #slider {
   background: url("assets/slider-bg.jpg") repeat-x; }
   #slider .content {
@@ -27,3 +146,29 @@
 
 #slider.light {
   background: white; }
+
+.v6 h1 {
+  font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
+  color: white;
+  width: 430px;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px; }
+.v6 form {
+  width: 340px;
+  float: left; }
+  .v6 form input {
+    font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
+    font-size: 1.3em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: .5em;
+    color: #0d95e3; }
+  .v6 form input.explore {
+    background-image: #f0f2f3;
+    background-image: -webkit-linear-gradient(bottom right, #e0e4e7 0%, white 100%); }
+.v6 .slide1 {
+  background: url(assets/slide1bg.png) center top no-repeat;
+  padding-top: 160px; }

@@ -1,0 +1,199 @@
+/*
+Template Name: Variabiles
+Template Description: Global variables for anything
+Author: Analog Analytics
+Version: 1.0
+*/
+
+/*This need some organization but it's a start*/
+
+@import 'mixins';
+/*Fixed width div defaults*/
+$width: 960px;
+$padding: 0 20px;
+
+/*BRAND COLORS (_bc) */
+$bc1: #0D95E3 !default; /*primary brand color default: blue*/
+$bc2: #656565 !default; /*secondary brand color default: dark-ish gray */
+$bc3: #6BB145 !default; /*complementary brand color default: green */
+$bc4: #464788 !default; /*complementary brand color default: purple */
+$bc5: #F6F6F6 !default; /*complementary brand color default: light gray */
+$alert: red !default;
+
+/*primary brand color gradient*/
+$gd1: 100deg, lighten($bc1, 20%) 0%, $bc1 20%, darken($bc1, 20%) 100%;
+$gd1_IE: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{lighten($bc1, 30%)}', endColorstr='#{darken($bc1, 11%)}',GradientType=0);	
+
+/*primary brand color gradient alternate (more subtle gradient)*/
+$gd1_alt: top, lighten($bc1, 10%) 0%, $bc1 50%, darken($bc1, 10%) 100%;
+$gd1_IE_alt: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{lighten($bc1, 10%)}', endColorstr='#{darken($bc1, 10%)}',GradientType=0);
+
+/*secondary brand color gradient*/
+$gd2: top, lighten($bc2, 80%) 0%, lighten($bc2, 60%) 40%, lighten($bc2, 50%) 100%;
+$gd2_rv: top, lighten($bc2, 50%) 0%, lighten($bc2, 60%) 50%, lighten($bc2, 80%) 100%;
+$gd2_IE: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{lighten($bc2, 80%)}', endColorstr='#{lighten($bc2, 50%)}',GradientType=0);	
+/*complementary brand color gradient --green */
+$gd3: top, darken($bc3, 5%) 0%, $bc3 40%, lighten($bc3, 10%) 100%;
+$gd3_rv: top, lighten($bc3, 60%) 0%, lighten($bc3, 70%) 50%, lighten($bc3, 5%) 100%;
+$gd3_IE: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($bc3, 5%)}', endColorstr='#{lighten($bc3, 10%)}',GradientType=0);
+
+// new dark grey button gradient
+$gd4: 100deg, lighten($bc2, 5%) 0%, $bc2 40%, darken($bc2, 10%) 100%;
+$gd4_rv: top, lighten($bc2, 60%) 0%, lighten($bc2, 70%) 50%, lighten($bc2, 5%) 100%;
+$gd4_IE: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{lighten($bc2, 30%)}', endColorstr='#{darken($bc2, 20%)}',GradientType=0);
+
+/*darker gray gradient used for disabled buttons*/
+$gd5: top, darken($bc5, 5%) 0%, darken($bc5, 20%) 100% !default; /*default: light gray*/
+$gd5_IE: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($bc5, 5%)}', endColorstr='#{darken($bc5, 20%)}',GradientType=0) !default; /*default: light gray*/
+
+/* alert gradient*/
+$alert_gd: top, lighten($alert, 30%) 0%, $alert 50%, darken($alert, 20%) 100%;
+$alert_gd_hv: top, lighten($alert, 20%) 0%, darken($alert, 20%) 50%, darken($alert, 30%) 100%;
+$alert_gd_IE: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{lighten($alert, 30%)}', endColorstr='#{darken($alert, 30%)}',GradientType=0);	
+	
+/*footer gradient--it's dark blue */
+$gd6: top, darken($bc1, 25%) 0%, darken($bc1, 14%) 10%, $bc1 100%;
+$gd6_IE: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($bc1, 25%)}', endColorstr='#{$bc1}',GradientType=0);	
+
+	
+/*COLOR APPLICATIONS*/
+$heading: $bc1 !default;
+$heading2: $bc2 !default;
+$text1: $bc2 !default;
+$text2: $bc1 !default;
+$link: lighten($bc1, 10%) !default;
+$border: lighten($bc2, 40%) !default;
+$btn_lt: $bc2;
+$btn_dk: white;
+
+$radius: 4px !default;
+
+/*default font for everything*/
+html,
+button,
+input,
+select,
+textarea {
+    font-family: Tahoma, "Helvetica Neue", Helvetica, Arial Unicode MS, Arial, sans-serif;
+    font-weight: 300;
+}
+
+//this is the blue button, the primary call to action
+%btn1{
+    @include button;
+    @include gradient($bc1, $gd1, $gd1_IE);
+    color: $btn_dk;
+    
+    &:hover{
+        @include box-shadow((0 0 6px transparentize($bc1, .2), 0px 0px 5px rgba(0, 0, 0, .1) inset));
+    }
+}
+
+//this is the dark gray button
+%btn2-dk{
+    @include button;
+    @include gradient($bc4, $gd4, $gd4_IE);
+    @extend .barclay_lt;
+    color: $btn_dk;
+    
+    &:hover{
+        @include box-shadow((0 0 6px transparentize($bc2, .2), 0px 0px 6px rgba(0, 0, 0, .5) inset));
+    }
+}
+
+//this is the old light gray button--it's slowly being killed by the branding team who favor the dark gray button. Eventually we can remove this after all of the instances of it have been replaced with %btn2.
+%btn2-lt{
+    @include button;
+    @include gradient($bc5, $gd2, $gd2_IE);
+    border: 1px solid $border;
+    color: $btn_lt;
+    
+    &:hover{
+        @include box-shadow((0 0 6px transparentize($bc1, .5), 0px 0px 5px rgba(0, 0, 0, .1) inset));
+    }
+    
+    .ie7 &,
+    .ie8 &{
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#dddddd",GradientType=1);
+
+    }
+    .ie9 &{
+      filter: none;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImcxMzUxMTA5NTc1NjA0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSI0NSUiIHN0b3AtY29sb3I9IiNmNmY2ZjYiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIgc3RvcC1vcGFjaXR5PSIxIi8+ICA8L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzEzNTExMDk1NzU2MDQpIiAvPjwvc3ZnPg==); 
+    }
+}
+
+//this is the green button, used for confirmation actions such as form submission
+%btn3{
+    @include button;
+    @include gradient($bc3, $gd3, $gd3_IE);
+    color: $btn_dk;
+    
+    &:hover{
+        @include box-shadow((0 0 6px transparentize($bc1, .2), 0px 0px 5px rgba(0, 0, 0, .1) inset));
+    }
+}
+//this is a small gray round button
+%btn_round{
+    @include border-radius(22px);
+    @include text-shadow(1px 2px 0px #FFFFFF);
+    @include gradient($bc5, $gd2, $gd2_IE);
+    border:1px solid lighten($border, 10%);
+    color:$link;
+    display:block;
+    height: 24px;
+    font-size: 1.2em;
+    line-height: 1.1;
+    text-align:center;
+    width: 24px;
+}
+
+%btn-disabled{
+    @include button;
+    @include gradient($bc5, $gd2, $gd2_IE);
+    color: lighten($bc2, 20%);
+    cursor: default;
+}
+
+.button_emphasis{
+    @include curved-shadow(top-bottom);
+    display: inline-block;
+    margin: .8em 0;
+    padding: .6em 0;
+}
+
+/*this is a light gray box used everywhere*/
+%lt_box{
+    background: $bc5;
+    padding: 1em;
+}
+
+/*typography*/
+%barclay_lt{
+    font-family: 'BarclaycardCoLtRegular', Tahoma, "Helvetica Neue", Helvetica, Arial Unicode MS, Arial, sans-serif;
+    font-weight: 300;
+}
+
+%barclay_reg{
+    font-family: 'BarclaycardCoRegular', Tahoma, "Helvetica Neue", Helvetica, Arial Unicode MS, Arial, sans-serif;
+    font-weight: 500;
+}
+
+//todo: convert this to a mixin taking the font-size as param
+.icon{
+    font-family: 'bespoke-icons', Tahoma, "Helvetica Neue", Helvetica, Arial Unicode MS, Arial, sans-serif;
+    font-size-adjust: .64; //adjusts icons size in firefox
+    font-size: 1.2em;
+    line-height: 1;
+/*     top: 4px; */
+    left: .5em; 
+    position: absolute;
+}
+
+.button-with-icon{
+  padding-left: 2.2em;
+}
+
+%layer-shadow{
+  @include box-shadow(0 2px 10px rgba(0, 0, 0, .15));
+}
