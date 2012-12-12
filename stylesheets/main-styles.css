@@ -208,6 +208,26 @@ textarea {
 .v6 .slide1 h1,
 .v6 .slide2 h1 {
   float: left; }
+.v6 .slide1 h1 span {
+  display: block;
+  float: left;
+  margin-right: .3em;
+  opacity: 0; }
+.v6 .slide1 h1 span:nth-of-type(1) {
+  -webkit-animation: flipInY 800ms linear 0 1;
+  -webkit-animation-fill-mode: forwards; }
+.v6 .slide1 h1 span:nth-of-type(2) {
+  -webkit-animation: flipInY 800ms linear 200ms 1;
+  -webkit-animation-fill-mode: forwards; }
+.v6 .slide1 h1 span:nth-of-type(3) {
+  -webkit-animation: flipInX 800ms linear 800ms 1;
+  -webkit-animation-fill-mode: forwards; }
+.v6 .slide1 h1 span:nth-of-type(4) {
+  -webkit-animation: flipInY 800ms linear 1000ms 1;
+  -webkit-animation-fill-mode: forwards; }
+.v6 .slide1 h1 span:nth-of-type(5) {
+  -webkit-animation: flipInY 800ms linear 1400ms 1;
+  -webkit-animation-fill-mode: forwards; }
 .v6 .slide3 h1 {
   text-align: center;
   margin: 0 auto .6em;
@@ -221,43 +241,56 @@ textarea {
     position: absolute;
     top: 1px; }
     .v6 .slide3 .cat-icons img {
-      position: absolute; }
+      position: absolute;
+      opacity: 0; }
     .v6 .slide3 .cat-icons .icon1 {
       top: 360px;
-      left: 600px; }
+      left: 600px;
+      -webkit-animation-delay: 1100ms; }
     .v6 .slide3 .cat-icons .icon2 {
       top: 300px;
-      left: 750px; }
+      left: 750px;
+      -webkit-animation-delay: 1500ms; }
     .v6 .slide3 .cat-icons .icon3 {
       top: 200px;
-      left: 850px; }
+      left: 840px;
+      -webkit-animation-delay: 900ms; }
     .v6 .slide3 .cat-icons .icon4 {
       top: 90px;
-      left: 780px; }
+      left: 780px;
+      -webkit-animation-delay: 400ms; }
     .v6 .slide3 .cat-icons .icon5 {
       top: 40px;
-      left: 650px; }
+      left: 650px;
+      -webkit-animation-delay: 1800ms; }
     .v6 .slide3 .cat-icons .icon6 {
       top: 20px;
-      left: 540px; }
+      left: 540px;
+      -webkit-animation-delay: 400ms; }
     .v6 .slide3 .cat-icons .icon7 {
       top: 20px;
-      left: 390px; }
+      left: 390px;
+      -webkit-animation-delay: 2000ms; }
     .v6 .slide3 .cat-icons .icon8 {
       top: 30px;
-      left: 230px; }
+      left: 230px;
+      -webkit-animation-delay: 600ms; }
     .v6 .slide3 .cat-icons .icon9 {
       top: 60px;
-      left: 110px; }
+      left: 110px;
+      -webkit-animation-delay: 1500ms; }
     .v6 .slide3 .cat-icons .icon10 {
       top: 130px;
-      left: 5px; }
+      left: 5px;
+      -webkit-animation-delay: 1400ms; }
     .v6 .slide3 .cat-icons .icon11 {
       top: 260px;
-      left: 60px; }
+      left: 60px;
+      -webkit-animation-delay: 1800ms; }
     .v6 .slide3 .cat-icons .icon12 {
       top: 300px;
-      left: 190px; }
+      left: 190px;
+      -webkit-animation-delay: 800ms; }
 .v6 a.explore {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

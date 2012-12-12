@@ -32,6 +32,37 @@
     float: left;
   }
 
+  .slide1{
+    h1{
+      span{
+        display: block;
+        float: left;
+        margin-right: .3em;
+        opacity: 0;
+      }
+      span:nth-of-type(1){
+         -webkit-animation:flipInY 800ms linear 0 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+      span:nth-of-type(2){
+         -webkit-animation:flipInY 800ms linear 200ms 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+      span:nth-of-type(3){
+         -webkit-animation:flipInX 800ms linear 800ms 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+      span:nth-of-type(4){
+         -webkit-animation:flipInY 800ms linear 1000ms 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+      span:nth-of-type(5){
+         -webkit-animation:flipInY 800ms linear 1400ms 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+    }
+  }
+
   .slide3 h1{
     text-align: center;
     margin: 0 auto .6em;
@@ -50,55 +81,69 @@
 
       img{
         position:absolute;
+        opacity: 0;
       }
 
       .icon1{
         top: 360px;
         left: 600px;
+        -webkit-animation-delay: 1100ms;
       }
       .icon2{
         top: 300px;
         left: 750px;
+        -webkit-animation-delay: 1500ms;
       }
       .icon3{
         top: 200px;
-        left: 850px;
+        left: 840px;
+        -webkit-animation-delay: 900ms;
+
       }
       .icon4{
         top: 90px;
         left: 780px;
+        -webkit-animation-delay: 400ms;
       }
       .icon5{
         top: 40px;
         left: 650px;
+        -webkit-animation-delay: 1800ms;
       }
       .icon6{
         top: 20px;
         left: 540px;
+        -webkit-animation-delay: 400ms;
       }
       .icon7{
         top: 20px;
         left: 390px;
+        -webkit-animation-delay: 2000ms;
       }
       .icon8{
         top: 30px;
         left: 230px;
+        -webkit-animation-delay: 600ms;
       }
       .icon9{
         top: 60px;
         left: 110px;
+        -webkit-animation-delay: 1500ms;
       }
       .icon10{
         top: 130px;
         left: 5px;
+        -webkit-animation-delay: 1400ms;
       }
       .icon11{
         top: 260px;
         left: 60px;
+        -webkit-animation-delay: 1800ms;
       }
       .icon12{
         top: 300px;
         left: 190px;
+        -webkit-animation-delay: 800ms;
       }
     }
   }// end .slide3
