@@ -13,7 +13,6 @@
 	background: white;
 }
 
-
 .v6{
 
   h1{
@@ -166,3 +165,76 @@
     margin-left: 20px;
   }
 }// end .v6
+
+.v5{
+	header{
+	@include gradient($gd2, (top, lighten($bc2, 80%) 0%, lighten($bc2, 60%) 40%, lighten($bc2, 55%) 100%), $gd1_IE_alt);
+	}
+	h1{
+		text-align: center;
+	}
+	.featured_offer_rotator {
+		list-style: none;
+		padding: 0;
+		margin: 0 auto;
+		width: 42em;
+		height: 24em;
+		
+		li {
+			box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
+			height: 20em;
+			width: 30em;
+			text-align: center;
+			cursor: pointer;
+	  		
+	  		&.roundabout-in-focus {
+				cursor: default;
+			}
+
+			span {
+				display: block;
+				padding-top: 6em;
+			}
+	  	}
+	}
+	.gallery_nav{
+		width: 590px;
+		display: block;
+		color:$bc1;
+		height: 25px;
+		margin: 0 auto;
+		position: relative;
+		margin-top: -40px;
+		font-size: 1.5em;
+		.prev_btn{
+			float: left;
+		}
+		.next_btn{
+		position: relative;
+		float: right;
+		padding-right: 30px
+		}
+	}
+	.offer_search_wrapper{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.offer_search{
+		.keyword{
+			width:30%;
+		}
+		.location{
+			margin-right: 5px;
+			width:20%;
+		}
+		.search_btn{
+			.icon{
+				position: relative;
+				top: 3px;
+				display: inline-block;
+				left: 6px;
+			}
+			@extend %btn1;
+		}
+	}
+}
