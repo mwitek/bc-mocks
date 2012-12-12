@@ -172,3 +172,20 @@ textarea {
 .v6 .slide1 {
   background: url(assets/slide1bg.png) center top no-repeat;
   padding-top: 160px; }
+
+.v5 .featured_offer_rotator {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 42em;
+  height: 24em; }
+  .v5 .featured_offer_rotator li {
+    height: 20em;
+    width: 30em;
+    text-align: center;
+    cursor: pointer; }
+    .v5 .featured_offer_rotator li.roundabout-in-focus {
+      cursor: default; }
+    .v5 .featured_offer_rotator li span {
+      display: block;
+      padding-top: 6em; }

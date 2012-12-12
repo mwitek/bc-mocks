@@ -46,3 +46,30 @@
 		padding-top: 160px;
 	}
 }
+
+.v5{
+
+	.featured_offer_rotator {
+		list-style: none;
+		padding: 0;
+		margin: 0 auto;
+		width: 42em;
+		height: 24em;
+		
+		li {
+			height: 20em;
+			width: 30em;
+			text-align: center;
+			cursor: pointer;
+	  		
+	  		&.roundabout-in-focus {
+				cursor: default;
+			}
+
+			span {
+				display: block;
+				padding-top: 6em;
+			}
+	  	}
+	}
+}

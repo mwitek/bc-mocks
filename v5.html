@@ -17,38 +17,9 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-
-      <style>
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 auto;
-        width: 42em;
-        height: 24em;
-      }
-      li {
-        height: 20em;
-        width: 30em;
-        background-color: #ccc;
-        text-align: center;
-        cursor: pointer;
-      }
-        li.roundabout-in-focus {
-          cursor: default;
-        }
-      li span {
-        display: block;
-        padding-top: 6em;
-      }
-
-      #carbonads-container .carbonad {
-        margin: 0 auto;
-      }
-    </style>
 </head>
 
-<body class="consumer">
+<body class="consumer v5">
 
 <div class="center page_wrap">
   
@@ -68,21 +39,20 @@
   <div class="branding">
     <a href="/home" class="header_logo"></a>
   </div>
-
-      <section>
-    <ul>
-      <li><span>Block 1</span></li>
-      <li><span>Block 2</span></li>
-      <li><span>Block 3</span></li>
-      <li><span>Block 4</span></li>
-      <li><span>Block 5</span></li>
-    </ul>
-    
-      </section>
-
-
 </header>
-
+    <section>
+      <ul class="featured_offer_rotator">
+        <li><image src="stylesheets/assets/V5-images/virgin-offer.png" /></li>
+        <li><image src="stylesheets/assets/V5-images/ba-offer.png" /></li>
+        <li><image src="stylesheets/assets/V5-images/ob-offer.png" /></li>
+      </ul>
+      <div class="gallery_nav">
+        <ul>
+          <li class="prev_btn">Previous</li>
+          <li class="next_btn">Next</li>
+        </ul>
+      </div>
+    </section>
   
   <div id="analog_analytics" class="content">
 
@@ -134,7 +104,13 @@
     <script src="javascripts/jquery.roundabout.js"></script>
     <script>
       $(document).ready(function() {
-        $('ul').roundabout();
+        $('.featured_offer_rotator').roundabout({
+          autoplay: false,
+          autoplayDuration: 5000,
+          btnPrev: '.prev_btn',
+          btnNext: '.next_btn'
+
+        });
       });
     </script>
 
