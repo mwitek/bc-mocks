@@ -24,3 +24,6 @@
   background: url("assets/slider-bg.jpg") repeat-x; }
   #slider .content {
     padding: 0px; }
+
+#slider.light {
+  background: white; }
