@@ -741,6 +741,9 @@ body.consumer footer {
 .v95 .grid-offer {
   float: left;
   width: 33%; }
+.v9 .event,
+.v95 .event {
+  padding-top: 12px; }
 
 @-webkit-keyframes spin {
   from {
