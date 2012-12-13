@@ -9,6 +9,13 @@
   }
 }
 
+.buttonArea{
+  z-index: 100;
+  a.active{
+    background: $bc1 !important;
+  }
+}
+
 #slider.light{
   background: white;
 }
@@ -37,13 +44,13 @@
   }
 .arrowButton{
     .prevArrow{
-      background: url('assets/left_arrow.png') no-repeat;
+      background: url('assets/left_arrow.png') 2px center no-repeat;
       cursor: pointer;
       left:-60px;
     }
 
     .nextArrow{
-      background: url('assets/right_arrow.png') no-repeat;
+      background: url('assets/right_arrow.png') 2px center no-repeat;
       cursor: pointer;
       right:-60px;
     }
@@ -389,7 +396,7 @@
     padding-top: 140px;
       h1{
         font-size: 2.4em;
-        width: 430px;
+        width: 450px;
       }
   }
   .slide2{
@@ -397,8 +404,36 @@
       width: 100%;
       float: none;
       margin-top: 20px;
+      margin-left: 120px;
       text-align: center;
       margin-bottom: .5em;
+      overflow: hidden;
+      span{
+        display: block;
+        float: left;
+        margin-right: .4em;
+        opacity: 0;
+      }
+      span:nth-of-type(1){
+         -webkit-animation:flipInY 800ms linear 0 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+      span:nth-of-type(2){
+         -webkit-animation:flipInY 800ms linear 200ms 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+      span:nth-of-type(3){
+         -webkit-animation:flipInY 800ms linear 300ms 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+      span:nth-of-type(4){
+         -webkit-animation:flipInY 800ms linear 400ms 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+      span:nth-of-type(5){
+         -webkit-animation:flipInY 800ms linear 500ms 1;
+         -webkit-animation-fill-mode: forwards;
+      }
     }
   }
   .slide3{
