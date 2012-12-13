@@ -26,7 +26,7 @@
 			slideShow: false,
 			slideShowDelay: 5000,
 			responsive: false,
-			autoHideButton: false
+			autoHideButton: true
 		}; 	          	
 
 		// extends settings with options provided
@@ -59,8 +59,6 @@
 		_this.wrap('<div class="' + settings.className + '"/>');  	 
 		parent = _this.parent();                                 
 		
-		parent.css('overflow', 'hidden')
-		
 		_this.find('.'+settings.sliderClassName).each(function(index) { 
 			/*				
 			if($(this).children().length>1){        
@@ -76,7 +74,7 @@
 
 		});     
 		
-	    // add the mobile touch screen support 
+		// add the mobile touch screen support 
 	   	_this.bind('touchstart', function (event) {
             var touch = event.originalEvent.touches[0] || event.originalEvent.changedTouches[0];
             if (!isMouseDown) {
@@ -124,7 +122,7 @@
 			}
 			xdiff = 0; 
 			if(buttonCon)buttonCon.delay(400).fadeOut();  				
-			if(arrowButton)arrowButton.delay(400).fadeOut();
+			if(arrowButton&&settings.autoHideButton)arrowButton.delay(400).fadeOut();
 			return false;            
 		})    
 		
@@ -135,7 +133,7 @@
                     isMouseDown = true;
                     this.mouseX = event.pageX;
                 }         
-                return false;  
+                // return false;  
             });                                         
                     
             _this.mousemove(function (event) {
@@ -194,7 +192,7 @@
 		
 		parent.mouseleave(function (event){
 			if(buttonCon)buttonCon.fadeOut(); 
-			if(arrowButton)arrowButton.fadeOut();
+			if(arrowButton&&settings.autoHideButton)arrowButton.fadeOut();
 			if(settings.pauseByHover&&settings.slideShow){
 				startSlideShow();	
 				isPlaying = true; 
@@ -222,7 +220,7 @@
 
         // add the previous/next arrow buttons
 		if(settings.showArrow){
-			arrowButton = $('<div class="arrowButton"><div class="prevArrow"><span class="icon"><</span></div><div class="nextArrow"><span class="icon">></span></div></div>');
+			arrowButton = $('<div class="arrowButton"><div class="prevArrow"></div><div class="nextArrow"></div></div>');
 			parent.append(arrowButton);
             var _next = $('.nextArrow', arrowButton).bind('click', function(event) {
 				nextBanner();
@@ -236,9 +234,9 @@
 		
 		
   		if(buttonCon)buttonCon.hide(); 
-		if(arrowButton)arrowButton.hide();
+		if(arrowButton&&settings.autoHideButton)arrowButton.hide();
 		
-		tweenTo(0);   
+		tweenTo(0);
 		
 		if(settings.slideShow) {
 			slideShowInt = setInterval(function() {
@@ -269,7 +267,7 @@
 					
 					// }       
 					if($.browser.msie&&$.browser.version<=9){
-		 				bannerArr[_preBannerNum].children().each(function(index) {								           
+		 				bannerArr[_preBannerNum].children().each(function(index) {			
 							$(this).css('opacity', 0);
 						});													
 					}

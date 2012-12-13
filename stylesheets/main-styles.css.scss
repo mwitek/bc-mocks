@@ -3,14 +3,14 @@
 @import 'variables';
 
 #slider{
-	background: url('assets/slider-bg.jpg') repeat-x;
-	.content{
-		padding:0px;
-	}
+  background: url('assets/slider-bg.jpg') repeat-x;
+  .content{
+    padding:0px;
+  }
 }
 
 #slider.light{
-	background: white;
+  background: white;
 }
 
 .v6{
@@ -26,12 +26,28 @@
     padding-right: 20px;
     box-sizing: border-box;
   }
+  
+  .oneByOne1{
+    overflow:visible;
+  }
 
   .slide1 h1,
   .slide2 h1{
     float: left;
   }
+.arrowButton{
+    .prevArrow{
+      background: url('assets/left_arrow.png') no-repeat;
+      cursor: pointer;
+      left:-60px;
+    }
 
+    .nextArrow{
+      background: url('assets/right_arrow.png') no-repeat;
+      cursor: pointer;
+      right:-60px;
+    }
+  }
   .slide1{
     h1{
       span{
@@ -175,36 +191,36 @@
     float: none;
   }
 
-	.slide1{
-		background: url(assets/slide1bg.png) right top no-repeat;
-		padding-top: 160px;
-	}
+  .slide1{
+    background: url(assets/slide1bg.png) right top no-repeat;
+    padding-top: 160px;
+  }
 
-	form{
-		width: 340px;
-		float: left;
-		input,
-		a.explore{
-			font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
-			font-size: 1.5em;
-			display: block;
-			width: 100%;
-			box-sizing: border-box;
-			margin-bottom: 1em;
-			padding: .5em;
-			color: $bc1 ;
-		}
-	}
+  form{
+    width: 340px;
+    float: left;
+    input,
+    a.explore{
+      font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
+      font-size: 1.5em;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 1em;
+      padding: .5em;
+      color: $bc1 ;
+    }
+  }
 
-	img.logo-grid{
-		width: 400px !important;
-		float: left;
-		margin-top: 70px;
+  img.logo-grid{
+    width: 400px !important;
+    float: left;
+    margin-top: 70px;
     margin-right: 20px;
-	}
-	.slide2 h1{
-		margin-top: 130px;
-	}
+  }
+  .slide2 h1{
+    margin-top: 130px;
+  }
 
   .slide2 .explore{
     margin-left: 20px;
@@ -212,11 +228,11 @@
 }// end .v6
 
 .v5{
-	header{
-	@include gradient($gd2, (top, lighten($bc2, 80%) 0%, lighten($bc2, 60%) 40%, lighten($bc2, 55%) 100%), $gd1_IE_alt);
-	}
-	h1{
-		text-align: center;
+  header{
+  @include gradient($gd2, (top, lighten($bc2, 80%) 0%, lighten($bc2, 60%) 40%, lighten($bc2, 55%) 100%), $gd1_IE_alt);
+  }
+  h1{
+    text-align: center;
     overflow: hidden;
     margin-left: 2em;
     span{
@@ -245,7 +261,7 @@
        -webkit-animation:flipInY 800ms linear 1400ms 1;
        -webkit-animation-fill-mode: forwards;
     }
-	}
+  }
 
   input,
   .search_btn{
@@ -257,68 +273,101 @@
     font-size: 1.2em;
     padding: .2em 1em .3em 1em !important;
   }
-	.featured_offer_rotator {
-		list-style: none;
-		padding: 0;
-		margin: 0 auto;
-		width: 42em;
-		height: 24em;
-		
-		li {
-			box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
-			height: 20em;
-			width: 30em;
-			text-align: center;
-			cursor: pointer;
-	  		
-	  		&.roundabout-in-focus {
-				cursor: default;
-			}
+  .featured_offer_rotator {
+    height: 24em;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 42em;
 
-			span {
-				display: block;
-				padding-top: 6em;
-			}
-	  	}
-	}
-	.gallery_nav{
-		width: 590px;
-		display: block;
-		color:$bc1;
-		height: 25px;
-		margin: 0 auto;
-		position: relative;
-		margin-top: -40px;
-		font-size: 1.5em;
-		.prev_btn{
-			float: left;
-		}
-		.next_btn{
-		position: relative;
-		float: right;
-		padding-right: 30px
-		}
-	}
-	.offer_search_wrapper{
-		margin-bottom: 30px;
-		text-align: center;
-	}
-	.offer_search{
-		.keyword{
-			width:30%;
-		}
-		.location{
-			margin-right: 5px;
-			width:20%;
-		}
-		.search_btn{
-			.icon{
-				position: relative;
-				top: 3px;
-				display: inline-block;
-				left: 6px;
-			}
-			@extend %btn1;
-		}
-	}
+    li {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
+      cursor: pointer;
+      height: 20em;
+      width: 30em;
+      text-align: center;
+        
+      &.roundabout-in-focus {
+        cursor: default;
+      }
+
+      span {
+        display: block;
+        padding-top: 6em;
+      }
+      }
+  }
+  .gallery_nav{
+    color:$bc1;
+    display: block;
+    font-size: 1.5em;
+    height: 25px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -40px;
+    width: 590px;
+    .prev_btn{
+      float: left;
+    }
+
+    .next_btn,
+    .prev_btn{
+      cursor:pointer;
+    }
+    .next_btn{
+    position: relative;
+    float: right;
+    padding-right: 30px
+    }
+  }
+  .offer_search_wrapper{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .offer_search{
+    .keyword{
+      width:30%;
+    }
+    
+    .location{
+      margin-right: 5px;
+      width:20%;
+    }
+    
+    .search_btn{
+      
+      .icon{
+        position: relative;
+        top: 3px;
+        display: inline-block;
+        left: 6px;
+      }
+
+      @extend %btn1;
+    }
+  }
+
+  .bx-wrapper{
+    margin: 80px 0 40px;
+    .bx-pager.bx-default-pager a{
+      background:$bc1;
+
+      &.active{
+      background: darken($bc1, 20%); 
+      }
+    }
+    a{
+    
+      &.bx-prev{
+        left: -45px;
+        font-size: 1.3em;
+      }
+
+      &.bx-next{
+        right: -25px;
+        font-size: 1.3em;
+      }
+    }
+  }
 }
