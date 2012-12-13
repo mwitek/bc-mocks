@@ -1,0 +1,30 @@
+.image_carousel {
+	margin-top:50px;
+	padding: 15px 0 15px 40px;
+	position: relative;
+}
+.image_carousel img {
+	display: block;
+	display: inline-block;
+	width:148px;
+}
+#carousel_prev,
+#carousel_next {
+	width: 45px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	top: 85px;
+}
+#carousel_prev {
+	left: -22px;
+}
+
+#carousel_next {
+	right: -22px;
+}
+
+.clearfix {
+	float: none;
+	clear: both;
+}

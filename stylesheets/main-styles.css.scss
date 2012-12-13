@@ -272,20 +272,20 @@
     padding: .2em 1em .3em 1em !important;
   }
   .featured_offer_rotator {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    width: 42em;
     height: 24em;
-    
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 42em;
+
     li {
       box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
+      cursor: pointer;
       height: 20em;
       width: 30em;
       text-align: center;
-      cursor: pointer;
         
-        &.roundabout-in-focus {
+      &.roundabout-in-focus {
         cursor: default;
       }
 
@@ -296,14 +296,14 @@
       }
   }
   .gallery_nav{
-    width: 590px;
-    display: block;
     color:$bc1;
+    display: block;
+    font-size: 1.5em;
     height: 25px;
     margin: 0 auto;
     position: relative;
     margin-top: -40px;
-    font-size: 1.5em;
+    width: 590px;
     .prev_btn{
       float: left;
     }
@@ -317,22 +317,61 @@
     margin-bottom: 30px;
     text-align: center;
   }
+  
   .offer_search{
     .keyword{
       width:30%;
     }
+    
     .location{
       margin-right: 5px;
       width:20%;
     }
+    
     .search_btn{
+      
       .icon{
         position: relative;
         top: 3px;
         display: inline-block;
         left: 6px;
       }
+
       @extend %btn1;
     }
+  }
+
+.image_carousel {
+  margin-top:50px;
+  padding: 15px 0 15px 40px;
+  position: relative;
+  
+  img {
+    display: block;
+    display: inline-block;
+    width:143px;
+  }
+
+  span{
+      color:$bc1;
+    }
+  }
+
+  #carousel_prev,
+  #carousel_next {
+    display: block;
+    font-size: 1.2em;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    width: 45px;
+  }
+
+  #carousel_prev {
+    left: -22px;
+  }
+
+  #carousel_next {
+    right: -22px;
   }
 }

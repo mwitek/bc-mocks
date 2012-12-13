@@ -419,31 +419,31 @@ textarea {
   font-size: 1.2em;
   padding: .2em 1em .3em 1em !important; }
 .v5 .featured_offer_rotator {
+  height: 24em;
   list-style: none;
-  padding: 0;
   margin: 0 auto;
-  width: 42em;
-  height: 24em; }
+  padding: 0;
+  width: 42em; }
   .v5 .featured_offer_rotator li {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
+    cursor: pointer;
     height: 20em;
     width: 30em;
-    text-align: center;
-    cursor: pointer; }
+    text-align: center; }
     .v5 .featured_offer_rotator li.roundabout-in-focus {
       cursor: default; }
     .v5 .featured_offer_rotator li span {
       display: block;
       padding-top: 6em; }
 .v5 .gallery_nav {
-  width: 590px;
-  display: block;
   color: #0d95e3;
+  display: block;
+  font-size: 1.5em;
   height: 25px;
   margin: 0 auto;
   position: relative;
   margin-top: -40px;
-  font-size: 1.5em; }
+  width: 590px; }
   .v5 .gallery_nav .prev_btn {
     float: left; }
   .v5 .gallery_nav .next_btn {
@@ -463,3 +463,25 @@ textarea {
   top: 3px;
   display: inline-block;
   left: 6px; }
+.v5 .image_carousel {
+  margin-top: 50px;
+  padding: 15px 0 15px 40px;
+  position: relative; }
+  .v5 .image_carousel img {
+    display: block;
+    display: inline-block;
+    width: 143px; }
+  .v5 .image_carousel span {
+    color: #0d95e3; }
+.v5 #carousel_prev,
+.v5 #carousel_next {
+  display: block;
+  font-size: 1.2em;
+  height: 50px;
+  position: absolute;
+  top: 60px;
+  width: 45px; }
+.v5 #carousel_prev {
+  left: -22px; }
+.v5 #carousel_next {
+  right: -22px; }
