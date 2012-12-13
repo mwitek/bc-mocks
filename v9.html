@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>
+<html class="no-js ie7 ie8 ie"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8 ie"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9 ie"> <![endif]-->
+<html class="no-js">
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bc-mocks</title>
+    <link rel="stylesheet" href="stylesheets/application.css">
+    <link rel="stylesheet" href="stylesheets/main-styles.css">
+    <link rel="stylesheet" href="stylesheets/animate.min.css">
+    <link rel="stylesheet" href="stylesheets/jquery.onebyone.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body class="consumer v6">
+
+<div class="center page_wrap">
+  
+  <header>
+  <div class="account_nav_wrapper">
+    <div class="account_nav_content">
+        <div class="logged_out_menu_container"><!--Logged out top bar-->
+          <div class="user-links">
+            <a href="/consumer/sign_in" class="log_in">              <span class="log_in_icon">p</span>Log in
+</a>            <a href="#test_link">
+              <span class="sign_up_icon">d</span>Sign up
+</a>          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="branding">
+    <a href="/home" class="header_logo"></a>
+  </div>
+
+      <!-- BEGIN SLIDER -->
+      <section id="slider">
+        
+        <div class="content">
+            <div id="banner">  
+              <div class="oneByOne_item slide1">
+                <h1><span>Explore</span> <span>thousands</span> <br><span>of offers from your</span> <br><span>favorite</span> <span>brands</span></h1>
+                <form>
+                  <fieldset>
+                    <input type="text" placeholder="keyword">
+                    <input type="text" placeholder="postcode">
+                    <a href="" class="explore">Explore offers <span class="icon">z</span></a>
+              </div><!-- ./slide1 -->
+              <div class="oneByOne_item slide2">
+                <img src="stylesheets/assets/logo-grid.png" class="logo-grid">
+                <h1>All your favorite<br> brands together in <br> one place</h1>
+                <a href="" class="explore">Explore offers <span class="icon">z</span></a>
+              </div><!-- ./slide2 -->
+                            <div class="oneByOne_item slide3">
+                 <h1>Find and offer you love in <br> one of 12 categories</h1>
+                 <a href="" class="explore">Explore offers <span class="icon">z</span></a>
+                 <div class="cat-icons">
+                   <img src="stylesheets/assets/icon-white_1.png" class="icon1 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_2.png" class="icon2 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_3.png" class="icon3 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_4.png" class="icon4 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_5.png" class="icon5 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_6.png" class="icon6 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_7.png" class="icon7 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_8.png" class="icon8 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_9.png" class="icon9 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_10.png" class="icon10 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_11.png" class="icon11 animated fadeInDown">
+                   <img src="stylesheets/assets/icon-white_12.png" class="icon12 animated fadeInDown">
+                 </div>
+              </div><!--  ./slide3  -->          
+            </div>
+        </div>
+        
+      </section>
+      <!-- END SLIDER -->
+
+
+</header>
+
+  
+  <div id="analog_analytics" class="content">
+
+  </div>
+  <!-- END #analog_analytics -->
+  <div class="clear"></div>
+  <!--we shouldn't need this div after the user nav is moved to the header partial -->
+  <div class="push"></div>
+</div>
+<!-- END .page_wrap -->
+<div class="signoff">
+  <div class="signoff_logo"></div>
+</div>
+<footer>
+  <div class="footer_wrap">
+
+    <div class="bespoke_mobile_links">
+      <h5>Offers on your mobile</h5>
+      <nav>
+        <a href="#" class="iphone_app">Find out about our mobile site and apps</a>
+      </nav>
+    </div>
+
+    <div class="in_business_links">
+      <h5>Got your own business?</h5>
+      <nav>
+        <a href="/home">Create offers for your customers</a>
+      </nav>
+    </div>
+
+    <div class="help_links">
+      <h5>Find out more</h5>
+      <nav>
+        <a href="#">FAQs</a>
+        <a href="#">Contact us</a>
+        <a href="#">Terms and conditions</a>
+        <a href="#">Privacy and Cookies Policy</a>
+        <a href="#">Website Terms of Use</a>
+        <a href="#">Refund and Cancellation Policy</a>
+      </nav>
+    </div>
+    <small>&#169; Barclays Bank Plc 2013. Bespoke Offers and Bespoke Offers logo are trademarks of Barclays Bank Plc Group - All rights reserved.  Bespoke Offers is part of Barclaycard, a trading name of Barclays Bank PLC. Registered Office: 1 Churchill Place, London, E14 5HP. Company Registration number 1026167. Group VAT registration: 243 8522 62 </small>
+
+  </div>
+</footer>
+</body>
+<script type="text/javascript" src="javascripts/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.onebyone.js"></script>
+  <script type="text/javascript"> 
+    $(document).ready(function(){
+      $('#banner').oneByOne({
+        className: 'oneByOne1',
+        sliderClassName: 'oneByOne_item',
+        pauseByHover: true,              
+        easeType: 'fadeInDown', 
+        width: 940, 
+        height: 470,
+        showButton: true,
+        enableDrag: true,
+        showArrow: true,
+        slideShow: false,
+        responsive: false,
+        minWidth: 960
+      });
+    })
+  </script>
+
+</html>
