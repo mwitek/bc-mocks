@@ -751,3 +751,6 @@ body.consumer footer {
 
   to {
     -webkit-transform: rotate(360deg); } }
+
+.signoff {
+  padding-top: 0 !important; }
