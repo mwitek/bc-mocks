@@ -7,6 +7,10 @@ body.consumer header .account_nav_content .user-links a{
   font-size: 1.2em;
 }
 
+body{
+  min-width: 960px;
+}
+
 //let's try to get them to agree that the blue footer is ugly and help convince branding
 body.consumer footer{
   background-image: white;
@@ -527,7 +531,8 @@ body.consumer footer{
     }
   }//end .slide1
   .slide2,
-  .slide4{
+  .slide4,
+  .slide5{
     h1{
       width: 100%;
       float: none;
@@ -606,7 +611,12 @@ body.consumer footer{
       font-size: 1.9em;
     }
   }
-}
+  .grid-offer{
+    float: left;
+    width: 33%;
+  }
+
+} //end .v9, v95
 
 @-webkit-keyframes spin {
   from {
