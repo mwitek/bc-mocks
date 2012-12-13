@@ -42,7 +42,7 @@
   .slide2 h1{
     float: left;
   }
-.arrowButton{
+  .arrowButton{
     .prevArrow{
       background: url('assets/left_arrow.png') 2px center no-repeat;
       cursor: pointer;
@@ -181,23 +181,32 @@
 
   a.explore{
     @include button;
-    font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
-    display: inline-block;
+    @include transition(all);
     box-sizing: border-box;
+    background-image: #e4e7e8;
+    background-image: -webkit-linear-gradient(bottom right, rgb(201,206,209) 0%, rgb(255,255,255) 100%);
+    display: inline-block;
+    font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
     font-size: 1.8em !important;
-    background-image: #f0f2f3;
-    background-image: -webkit-linear-gradient(bottom right, rgb(224,228,231) 0%, rgb(255,255,255) 100%);
+    padding-left: 40px !important;
     position: relative;
-    padding-left: 40px;
     text-align: left;
     width: 320px;
-    @include box-shadow(3px 3px 4px (0, 0, 0, .6));
+    @include box-shadow(2px 2px 6px rgba(0,0,0,.3));
+    z-index: 20;
     span.icon{
+      @include transition(all);
       position: absolute;
       right: 50px;
-      top: 12px;
+      top: 14px;
       text-align: right;
       float: right;
+      &:hover{
+        -webkit-transform: scale(1.1, 1.1) translateX(-8px);
+      }
+    }
+    &:hover{
+      @include box-shadow(0 0 8px rgba(255, 255, 255, .8));
     }
   }
   .slide3 .explore{
@@ -214,6 +223,9 @@
   form{
     width: 340px;
     float: left;
+    input[type=text]{
+      border: 1px solid $bc1;
+    }
     input,
     a.explore{
       font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
