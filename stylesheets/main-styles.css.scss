@@ -38,11 +38,13 @@
 .arrowButton{
     .prevArrow{
       background: url('assets/left_arrow.png') no-repeat;
+      cursor: pointer;
       left:-60px;
     }
 
     .nextArrow{
       background: url('assets/right_arrow.png') no-repeat;
+      cursor: pointer;
       right:-60px;
     }
   }
