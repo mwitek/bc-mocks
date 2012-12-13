@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="stylesheets/main-styles.css">
     <link rel="stylesheet" href="stylesheets/jquery.onebyone.css">
     <link rel="stylesheet" href="stylesheets/animate.min.css">
+    <link rel="stylesheet" href="stylesheets/jquery.bxslider.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -62,22 +63,19 @@
     </section>
   
   <div id="analog_analytics" class="content">
-  <div class="image_carousel">
-  <div id="bottom_carousel">
-    <img src="stylesheets/assets/V5-images/boots-logo.png" />
-    <img src="stylesheets/assets/V5-images/brit-gas-logo.png" />
-    <img src="stylesheets/assets/V5-images/britsh-logo.png" />
-    <img src="stylesheets/assets/V5-images/carphone-logo.png" />
-    <img src="stylesheets/assets/V5-images/domino-logo.png" />
-    <img src="stylesheets/assets/V5-images/gap-logo.png" />
-    <img src="stylesheets/assets/V5-images/goldsmith-logo.png" />
-    <img src="stylesheets/assets/V5-images/hilton-logo.png" />
-    <img src="stylesheets/assets/V5-images/rac-logo.png" />
-    <img src="stylesheets/assets/V5-images/shell-logo.png" />
-    <img src="stylesheets/assets/V5-images/virgin-logo.png" />
-  </div>
-  <a id="carousel_prev" href="#"><span class="icon"><</span></a>
-  <a id="carousel_next" href="#"><span class="icon">></span></a>
+    <ul class="bottom_carousel">
+      <li><img src="stylesheets/assets/V5-images/boots-logo.png" /></li>
+      <li><img src="stylesheets/assets/V5-images/brit-gas-logo.png" /></li>
+      <li><img src="stylesheets/assets/V5-images/britsh-logo.png" /></li>
+      <li><img src="stylesheets/assets/V5-images/carphone-logo.png" /></li>
+      <li><img src="stylesheets/assets/V5-images/domino-logo.png" /></li>
+      <li><img src="stylesheets/assets/V5-images/gap-logo.png" /></li>
+      <li><img src="stylesheets/assets/V5-images/goldsmith-logo.png" /></li>
+      <li><img src="stylesheets/assets/V5-images/hilton-logo.png" /></li>
+      <li><img src="stylesheets/assets/V5-images/rac-logo.png" /></li>
+      <li><img src="stylesheets/assets/V5-images/shell-logo.png" /></li>
+      <li><img src="stylesheets/assets/V5-images/virgin-logo.png" /></li>
+    </ul>
   </div>
   <!-- END #analog_analytics -->
   <div class="clear"></div>
@@ -87,6 +85,7 @@
 <!-- END .page_wrap -->
 <div class="signoff">
   <div class="signoff_logo"></div>
+<img src="stylesheets/assets/share-icons.png" width="100px" style="margin-top:5px;"/>
 </div>
 <footer>
   <div class="footer_wrap">
@@ -122,22 +121,15 @@
 </footer>
 </body>
 <script type="text/javascript" src="javascripts/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="javascripts/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script type="text/javascript" src="javascripts/jquery.bxslider.js"></script>
 <script type="text/javascript">
-  $("#bottom_carousel").carouFredSel({
-    circular: false,
-    infinite: false,
-    auto  : false,
-    height : 125,
-    prev  : { 
-      button  : "#carousel_prev",
-      key   : "left"
-    },
-    next  : { 
-      button  : "#carousel_next",
-      key   : "right"
-    }
-  });
+$('.bottom_carousel').bxSlider({
+  maxSlides: 6,
+  slideWidth: 143,
+  slideMargin: 10,
+  nextText: '<span class="icon">></span>',
+  prevText: '<span class="icon"><</span>'
+});
 </script>
 
 <script src="javascripts/jquery.roundabout.js"></script>

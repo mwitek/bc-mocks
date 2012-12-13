@@ -341,41 +341,26 @@
     }
   }
 
-.image_carousel {
-  margin-top:50px;
-  padding: 15px 0 15px 40px;
-  position: relative;
-  
-  img {
-    display: block;
-    display: inline-block;
-    width:143px;
-  }
+  .bx-wrapper{
+    margin: 80px 0 40px;
+    .bx-pager.bx-default-pager a{
+      background:$bc1;
 
-  span{
-      color:$bc1;
+      &.active{
+      background: darken($bc1, 20%); 
+      }
     }
-  }
+    a{
+    
+      &.bx-prev{
+        left: -45px;
+        font-size: 1.3em;
+      }
 
-  .caroufredsel_wrapper{
-    height: 145px;
-  }
-
-  #carousel_prev,
-  #carousel_next {
-    display: block;
-    font-size: 1.2em;
-    height: 50px;
-    position: absolute;
-    top: 60px;
-    width: 45px;
-  }
-
-  #carousel_prev {
-    left: -22px;
-  }
-
-  #carousel_next {
-    right: -22px;
+      &.bx-next{
+        right: -25px;
+        font-size: 1.3em;
+      }
+    }
   }
 }
