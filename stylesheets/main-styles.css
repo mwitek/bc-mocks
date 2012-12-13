@@ -448,6 +448,9 @@ textarea {
   width: 590px; }
   .v5 .gallery_nav .prev_btn {
     float: left; }
+  .v5 .gallery_nav .next_btn,
+  .v5 .gallery_nav .prev_btn {
+    cursor: pointer; }
   .v5 .gallery_nav .next_btn {
     position: relative;
     float: right;
