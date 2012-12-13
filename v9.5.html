@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="stylesheets/jquery.onebyone.css">
     <link rel="stylesheet" href="stylesheets/main-styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- experimental--for the video on the about page -->
+    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -81,7 +85,12 @@
                   <img src="stylesheets/assets/london-skyline.png">
                   <img src="stylesheets/assets/london-eye.png" class="london-eye">
                  </div>
-              </div><!--  ./slide3  -->          
+              </div><!--  ./slide3  -->  
+              <div class="oneByOne_item slide4">
+                <h1><span>Discover how</span> <span>we bring you</span> <span>the best</span> <span>bespoke</span> <span>offers</span></h1>
+                <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="498" height="280" poster="stylesheets/assets/video-still.png" data-setup="{}">
+                <source src="stylesheets/assets/bespoke.mp4" type='video/mp4'>
+              </div><!--  ./slide4    -->    
             </div>
         </div>     
       </section>

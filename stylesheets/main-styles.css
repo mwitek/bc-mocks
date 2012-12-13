@@ -631,7 +631,9 @@ body.consumer footer {
       -webkit-animation-duration: 500ms;
       -webkit-animation-delay: 600ms; }
 .v9 .slide2 h1,
-.v95 .slide2 h1 {
+.v9 .slide4 h1,
+.v95 .slide2 h1,
+.v95 .slide4 h1 {
   width: 100%;
   float: none;
   margin-top: 20px;
@@ -640,29 +642,41 @@ body.consumer footer {
   margin-bottom: .5em;
   overflow: hidden; }
   .v9 .slide2 h1 span,
-  .v95 .slide2 h1 span {
+  .v9 .slide4 h1 span,
+  .v95 .slide2 h1 span,
+  .v95 .slide4 h1 span {
     display: block;
     float: left;
     margin-right: .4em;
     opacity: 0; }
   .v9 .slide2 h1 span:nth-of-type(1),
-  .v95 .slide2 h1 span:nth-of-type(1) {
+  .v9 .slide4 h1 span:nth-of-type(1),
+  .v95 .slide2 h1 span:nth-of-type(1),
+  .v95 .slide4 h1 span:nth-of-type(1) {
     -webkit-animation: flipInY 800ms linear 0 1;
     -webkit-animation-fill-mode: forwards; }
   .v9 .slide2 h1 span:nth-of-type(2),
-  .v95 .slide2 h1 span:nth-of-type(2) {
+  .v9 .slide4 h1 span:nth-of-type(2),
+  .v95 .slide2 h1 span:nth-of-type(2),
+  .v95 .slide4 h1 span:nth-of-type(2) {
     -webkit-animation: flipInY 800ms linear 200ms 1;
     -webkit-animation-fill-mode: forwards; }
   .v9 .slide2 h1 span:nth-of-type(3),
-  .v95 .slide2 h1 span:nth-of-type(3) {
+  .v9 .slide4 h1 span:nth-of-type(3),
+  .v95 .slide2 h1 span:nth-of-type(3),
+  .v95 .slide4 h1 span:nth-of-type(3) {
     -webkit-animation: flipInY 800ms linear 300ms 1;
     -webkit-animation-fill-mode: forwards; }
   .v9 .slide2 h1 span:nth-of-type(4),
-  .v95 .slide2 h1 span:nth-of-type(4) {
+  .v9 .slide4 h1 span:nth-of-type(4),
+  .v95 .slide2 h1 span:nth-of-type(4),
+  .v95 .slide4 h1 span:nth-of-type(4) {
     -webkit-animation: flipInY 800ms linear 400ms 1;
     -webkit-animation-fill-mode: forwards; }
   .v9 .slide2 h1 span:nth-of-type(5),
-  .v95 .slide2 h1 span:nth-of-type(5) {
+  .v9 .slide4 h1 span:nth-of-type(5),
+  .v95 .slide2 h1 span:nth-of-type(5),
+  .v95 .slide4 h1 span:nth-of-type(5) {
     -webkit-animation: flipInY 800ms linear 500ms 1;
     -webkit-animation-fill-mode: forwards; }
 .v9 .slide3,
@@ -696,6 +710,16 @@ body.consumer footer {
     -webkit-animation-duration: 40000ms;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear; }
+.v9 .slide4,
+.v95 .slide4 {
+  text-align: center; }
+  .v9 .slide4 .video-js,
+  .v95 .slide4 .video-js {
+    margin: 0 auto;
+    text-align: center; }
+  .v9 .slide4 h1,
+  .v95 .slide4 h1 {
+    font-size: 1.9em; }
 
 @-webkit-keyframes spin {
   from {

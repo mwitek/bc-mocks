@@ -526,7 +526,8 @@ body.consumer footer{
 
     }
   }//end .slide1
-  .slide2{
+  .slide2,
+  .slide4{
     h1{
       width: 100%;
       float: none;
@@ -592,7 +593,17 @@ body.consumer footer{
       -webkit-animation-duration: 40000ms;
       -webkit-animation-iteration-count: infinite;
       -webkit-animation-timing-function: linear;
+    }
+  }// end .slide3
 
+  .slide4{
+    text-align: center;
+    .video-js{
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1{
+      font-size: 1.9em;
     }
   }
 }
