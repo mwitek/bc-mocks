@@ -68,15 +68,10 @@
 .arrowButton .prevArrow{
 	left: -30px; 
 }
-.arrowButton .prevArrow:hover {
-	background-position:-35px -90px;
-} 
+
 .arrowButton .nextArrow{                 
 	right: -30px; 
 } 
-.arrowButton .nextArrow:hover {
-	background-position: -35px 0;
-}
 
 /* Elements styling */
 #banner img.slide {

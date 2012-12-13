@@ -205,9 +205,17 @@ textarea {
   margin-left: 20px;
   padding-right: 20px;
   box-sizing: border-box; }
+.v6 .oneByOne1 {
+  overflow: visible; }
 .v6 .slide1 h1,
 .v6 .slide2 h1 {
   float: left; }
+.v6 .arrowButton .prevArrow {
+  background: url("assets/left_arrow.png") no-repeat;
+  left: -60px; }
+.v6 .arrowButton .nextArrow {
+  background: url("assets/right_arrow.png") no-repeat;
+  right: -60px; }
 .v6 .slide1 h1 span {
   display: block;
   float: left;
