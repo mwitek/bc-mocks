@@ -519,10 +519,85 @@ textarea {
 .v9 #banner .oneByOne_item {
   height: 410px; }
 .v9 .slide1 {
-  padding-top: 140px; }
+  background: url(assets/burst_bg.png) top right no-repeat;
+  padding-top: 140px;
+  position: relative; }
   .v9 .slide1 h1 {
     font-size: 2.4em;
     width: 450px; }
+  .v9 .slide1 form {
+    z-index: 1;
+    position: relative; }
+  .v9 .slide1 .bursty-logos {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    height: 400px;
+    width: 960px;
+    z-index: 0; }
+    .v9 .slide1 .bursty-logos img {
+      position: absolute; }
+    .v9 .slide1 .bursty-logos .burst1 {
+      top: -10px;
+      right: 190px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 900ms; }
+    .v9 .slide1 .bursty-logos .burst2 {
+      top: -5px;
+      right: 460px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 1000ms; }
+    .v9 .slide1 .bursty-logos .burst3 {
+      top: 20px;
+      right: 0px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 600ms; }
+    .v9 .slide1 .bursty-logos .burst4 {
+      top: 150px;
+      right: 0px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 200ms; }
+    .v9 .slide1 .bursty-logos .burst5 {
+      top: 0px;
+      right: 550px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 1600ms; }
+    .v9 .slide1 .bursty-logos .burst6 {
+      top: -30px;
+      right: 360px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 200ms; }
+    .v9 .slide1 .bursty-logos .burst7 {
+      top: 70px;
+      right: 200px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 1800ms; }
+    .v9 .slide1 .bursty-logos .burst8 {
+      top: 30px;
+      right: 280px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 400ms; }
+    .v9 .slide1 .bursty-logos .burst9 {
+      top: -40px;
+      right: 40px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 1300ms; }
+    .v9 .slide1 .bursty-logos .burst10 {
+      top: 60px;
+      right: 390px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 1200ms; }
+    .v9 .slide1 .bursty-logos .burst11 {
+      top: 80px;
+      right: 80px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 1600ms; }
+    .v9 .slide1 .bursty-logos .burst12 {
+      top: 10px;
+      right: 510px;
+      -webkit-animation-duration: 500ms;
+      -webkit-animation-delay: 600ms; }
 .v9 .slide2 h1 {
   width: 100%;
   float: none;
