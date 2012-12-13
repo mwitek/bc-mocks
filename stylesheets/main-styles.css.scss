@@ -2,6 +2,25 @@
 @import 'mixins';
 @import 'variables';
 
+//some global styles
+body.consumer header .account_nav_content .user-links a{
+  font-size: 1.2em;
+}
+
+//let's try to get them to agree that the blue footer is ugly and help convince branding
+body.consumer footer{
+  background-image: white;
+  background-image: -webkit-linear-gradient(top, rgb(220,227,231) 0%, rgb(255,255,255) 8%);  
+  color: $bc2;
+  a, h5, small{
+    color: $bc2;
+  }
+  .footer_wrap div:nth-child(2),
+  .footer_wrap div:nth-child(3){
+    border-left: 1px solid darken($bc5, 10%);
+  }
+}
+
 #slider{
   background: url('assets/slider-bg.jpg') repeat-x;
   .content{
@@ -20,7 +39,7 @@
   background: white;
 }
 
-.v6, .v9{
+.v6, .v9, .v95{
 
   h1{
     font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif; 
@@ -399,7 +418,8 @@
   }
 }
 
-.v9{
+.v9,
+.v95{
   .oneByOne1,
   #banner .oneByOne_item{
     height: 410px;
@@ -430,76 +450,76 @@
         position: absolute;
       }
 
-      .burst1{
+      .burst1{ //plug
         top: -10px;
         right: 190px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 900ms;
       }
-      .burst2{
+      .burst2{ //masks
         top: -5px;
         right: 460px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 1000ms;
       }
-      .burst3{
-        top: 20px;
+      .burst3{ //cart
+        top: 100px;
         right: 0px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 600ms;
 
       }
-      .burst4{
-        top: 150px;
-        right: 0px;
+      .burst4{ //food
+        top:200px;
+        right: 10px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 200ms;
       }
-      .burst5{
+      .burst5{ //airplane
         top: 0px;
-        right: 550px;
+        right: 500px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 1600ms;
       }
-      .burst6{
-        top: -30px;
-        right: 360px;
+      .burst6{ //rac logo
+        top: 10px;
+        right: 310px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 200ms;
       }
-      .burst7{
-        top: 70px;
-        right: 200px;
+      .burst7{ //kids
+        top: 80px;
+        right: 280px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 1800ms;
       }
-      .burst8{
-        top: 30px;
-        right: 280px;
+      .burst8{ //ba logo
+        top: 65px;
+        right: 165px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 400ms;
       }
-      .burst9{
-        top: -40px;
+      .burst9{ //boots logo
+        top: 0px;
         right: 40px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 1300ms;
       }
-      .burst10{
-        top: 60px;
+      .burst10{ //virgin logo
+        top: 40px;
         right: 390px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 1200ms;
       }
-      .burst11{
-        top: 80px;
-        right: 80px;
+      .burst11{ //shell logo
+        top: 110px;
+        right: 20px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 1600ms;
       }
-      .burst12{
-        top: 10px;
-        right: 510px;
+      .burst12{ //bottle
+        top: 180px;
+        right: 440px;
         -webkit-animation-duration: 500ms;
         -webkit-animation-delay: 600ms;
       }
@@ -577,12 +597,16 @@
   }
 }
 
-
 @-webkit-keyframes spin {
-      from {
-        -webkit-transform: rotate(0deg);
-      }
-      to {
-        -webkit-transform: rotate(360deg);
-      }
-    }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+//custom stuff for just v95
+.v95{
+
+}
