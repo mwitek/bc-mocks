@@ -171,7 +171,7 @@ textarea {
 
 /*this is a light gray box used everywhere*/
 /*typography*/
-.v5 .offer_search .search_btn, .v6 a.explore {
+.v5 .offer_search .search_btn, .v6 a.explore, .v9 a.explore {
   font-family: "BarclaycardCoLtRegular", Tahoma, "Helvetica Neue", Helvetica, Arial Unicode MS, Arial, sans-serif;
   font-weight: 300; }
 
@@ -195,7 +195,7 @@ textarea {
 #slider.light {
   background: white; }
 
-.v6 h1 {
+.v6 h1, .v9 h1 {
   font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
   color: white;
   font-size: 2.5em;
@@ -205,103 +205,109 @@ textarea {
   margin-left: 20px;
   padding-right: 20px;
   box-sizing: border-box; }
-.v6 .oneByOne1 {
+.v6 .oneByOne1, .v9 .oneByOne1 {
   overflow: visible; }
 .v6 .slide1 h1,
-.v6 .slide2 h1 {
+.v6 .slide2 h1, .v9 .slide1 h1, .v9 .slide2 h1 {
   float: left; }
-.v6 .arrowButton .prevArrow {
+.v6 .arrowButton .prevArrow, .v9 .arrowButton .prevArrow {
   background: url("assets/left_arrow.png") no-repeat;
   cursor: pointer;
   left: -60px; }
-.v6 .arrowButton .nextArrow {
+.v6 .arrowButton .nextArrow, .v9 .arrowButton .nextArrow {
   background: url("assets/right_arrow.png") no-repeat;
   cursor: pointer;
   right: -60px; }
-.v6 .slide1 h1 span {
+.v6 .slide1 h1 span, .v9 .slide1 h1 span {
   display: block;
   float: left;
-  margin-right: .5em;
+  margin-right: .4em;
   opacity: 0; }
-.v6 .slide1 h1 span:nth-of-type(1) {
+.v6 .slide1 h1 span:nth-of-type(1), .v9 .slide1 h1 span:nth-of-type(1) {
   -webkit-animation: flipInY 800ms linear 0 1;
   -webkit-animation-fill-mode: forwards; }
-.v6 .slide1 h1 span:nth-of-type(2) {
+.v6 .slide1 h1 span:nth-of-type(2), .v9 .slide1 h1 span:nth-of-type(2) {
   -webkit-animation: flipInY 800ms linear 200ms 1;
   -webkit-animation-fill-mode: forwards; }
-.v6 .slide1 h1 span:nth-of-type(3) {
+.v6 .slide1 h1 span:nth-of-type(3), .v9 .slide1 h1 span:nth-of-type(3) {
   -webkit-animation: flipInX 800ms linear 800ms 1;
   -webkit-animation-fill-mode: forwards; }
-.v6 .slide1 h1 span:nth-of-type(4) {
+.v6 .slide1 h1 span:nth-of-type(4), .v9 .slide1 h1 span:nth-of-type(4) {
   -webkit-animation: flipInY 800ms linear 1000ms 1;
   -webkit-animation-fill-mode: forwards; }
-.v6 .slide1 h1 span:nth-of-type(5) {
+.v6 .slide1 h1 span:nth-of-type(5), .v9 .slide1 h1 span:nth-of-type(5) {
   -webkit-animation: flipInY 800ms linear 1400ms 1;
   -webkit-animation-fill-mode: forwards; }
-.v6 .slide3 h1 {
+.v6 .slide1 h1 span:nth-of-type(6), .v9 .slide1 h1 span:nth-of-type(6) {
+  -webkit-animation: flipInY 900ms linear 1400ms 1;
+  -webkit-animation-fill-mode: forwards; }
+.v6 .slide1 h1 span:nth-of-type(7), .v9 .slide1 h1 span:nth-of-type(7) {
+  -webkit-animation: flipInY 1000ms linear 1400ms 1;
+  -webkit-animation-fill-mode: forwards; }
+.v6 .slide3 h1, .v9 .slide3 h1 {
   text-align: center;
   margin: 0 auto .6em;
   float: none;
   width: 500px; }
-.v6 .slide3 {
+.v6 .slide3, .v9 .slide3 {
   text-align: center;
   padding-top: 160px;
   position: relative; }
-  .v6 .slide3 .cat-icons {
+  .v6 .slide3 .cat-icons, .v9 .slide3 .cat-icons {
     position: absolute;
     top: 1px; }
-    .v6 .slide3 .cat-icons img {
+    .v6 .slide3 .cat-icons img, .v9 .slide3 .cat-icons img {
       position: absolute;
       opacity: 0; }
-    .v6 .slide3 .cat-icons .icon1 {
+    .v6 .slide3 .cat-icons .icon1, .v9 .slide3 .cat-icons .icon1 {
       top: 360px;
       left: 600px;
       -webkit-animation-delay: 1100ms; }
-    .v6 .slide3 .cat-icons .icon2 {
+    .v6 .slide3 .cat-icons .icon2, .v9 .slide3 .cat-icons .icon2 {
       top: 300px;
       left: 750px;
       -webkit-animation-delay: 1500ms; }
-    .v6 .slide3 .cat-icons .icon3 {
+    .v6 .slide3 .cat-icons .icon3, .v9 .slide3 .cat-icons .icon3 {
       top: 200px;
       left: 840px;
       -webkit-animation-delay: 900ms; }
-    .v6 .slide3 .cat-icons .icon4 {
+    .v6 .slide3 .cat-icons .icon4, .v9 .slide3 .cat-icons .icon4 {
       top: 90px;
       left: 780px;
       -webkit-animation-delay: 400ms; }
-    .v6 .slide3 .cat-icons .icon5 {
+    .v6 .slide3 .cat-icons .icon5, .v9 .slide3 .cat-icons .icon5 {
       top: 40px;
       left: 650px;
       -webkit-animation-delay: 1800ms; }
-    .v6 .slide3 .cat-icons .icon6 {
+    .v6 .slide3 .cat-icons .icon6, .v9 .slide3 .cat-icons .icon6 {
       top: 20px;
       left: 540px;
       -webkit-animation-delay: 400ms; }
-    .v6 .slide3 .cat-icons .icon7 {
+    .v6 .slide3 .cat-icons .icon7, .v9 .slide3 .cat-icons .icon7 {
       top: 20px;
       left: 390px;
       -webkit-animation-delay: 2000ms; }
-    .v6 .slide3 .cat-icons .icon8 {
+    .v6 .slide3 .cat-icons .icon8, .v9 .slide3 .cat-icons .icon8 {
       top: 30px;
       left: 230px;
       -webkit-animation-delay: 600ms; }
-    .v6 .slide3 .cat-icons .icon9 {
+    .v6 .slide3 .cat-icons .icon9, .v9 .slide3 .cat-icons .icon9 {
       top: 60px;
       left: 110px;
       -webkit-animation-delay: 1500ms; }
-    .v6 .slide3 .cat-icons .icon10 {
+    .v6 .slide3 .cat-icons .icon10, .v9 .slide3 .cat-icons .icon10 {
       top: 130px;
       left: 5px;
       -webkit-animation-delay: 1400ms; }
-    .v6 .slide3 .cat-icons .icon11 {
+    .v6 .slide3 .cat-icons .icon11, .v9 .slide3 .cat-icons .icon11 {
       top: 260px;
       left: 60px;
       -webkit-animation-delay: 1800ms; }
-    .v6 .slide3 .cat-icons .icon12 {
+    .v6 .slide3 .cat-icons .icon12, .v9 .slide3 .cat-icons .icon12 {
       top: 300px;
       left: 190px;
       -webkit-animation-delay: 800ms; }
-.v6 a.explore {
+.v6 a.explore, .v9 a.explore {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -343,26 +349,26 @@ textarea {
   -moz-box-shadow: 3px 3px 4px 0, 0, 0, 0.6;
   -webkit-box-shadow: 3px 3px 4px 0, 0, 0, 0.6;
   box-shadow: 3px 3px 4px 0, 0, 0, 0.6; }
-  .v6 a.explore:hover {
+  .v6 a.explore:hover, .v9 a.explore:hover {
     text-decoration: none; }
-  .v6 a.explore span.icon {
+  .v6 a.explore span.icon, .v9 a.explore span.icon {
     position: absolute;
     right: 50px;
     top: 12px;
     text-align: right;
     float: right; }
-.v6 .slide3 .explore {
+.v6 .slide3 .explore, .v9 .slide3 .explore {
   margin: 0 auto;
   display: inline-block;
   float: none; }
-.v6 .slide1 {
+.v6 .slide1, .v9 .slide1 {
   background: url(assets/slide1bg.png) right top no-repeat;
   padding-top: 160px; }
-.v6 form {
+.v6 form, .v9 form {
   width: 340px;
   float: left; }
   .v6 form input,
-  .v6 form a.explore {
+  .v6 form a.explore, .v9 form input, .v9 form a.explore {
     font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
     font-size: 1.5em;
     display: block;
@@ -371,14 +377,14 @@ textarea {
     margin-bottom: 1em;
     padding: .5em;
     color: #0d95e3; }
-.v6 img.logo-grid {
+.v6 img.logo-grid, .v9 img.logo-grid {
   width: 400px !important;
   float: left;
   margin-top: 70px;
   margin-right: 20px; }
-.v6 .slide2 h1 {
+.v6 .slide2 h1, .v9 .slide2 h1 {
   margin-top: 130px; }
-.v6 .slide2 .explore {
+.v6 .slide2 .explore, .v9 .slide2 .explore {
   margin-left: 20px; }
 
 .v5 header {
@@ -480,3 +486,51 @@ textarea {
   .v5 .bx-wrapper a.bx-next {
     right: -25px;
     font-size: 1.3em; }
+
+.v9 .oneByOne1,
+.v9 #banner .oneByOne_item {
+  height: 410px; }
+.v9 .slide1 {
+  padding-top: 140px; }
+  .v9 .slide1 h1 {
+    font-size: 2.4em;
+    width: 430px; }
+.v9 .slide2 h1 {
+  width: 100%;
+  float: none;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: .5em; }
+.v9 .slide3 {
+  padding-top: 0;
+  position: relative;
+  text-align: left; }
+  .v9 .slide3 h1 {
+    margin-top: 20px;
+    z-index: 3;
+    text-align: left; }
+  .v9 .slide3 .explore {
+    margin-left: 250px; }
+  .v9 .slide3 .london-sky {
+    position: absolute;
+    z-index: 1;
+    bottom: -4px;
+    left: 120px; }
+  .v9 .slide3 .london-eye {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    z-index: 4;
+    bottom: 12px;
+    right: 35px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 40000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg); } }

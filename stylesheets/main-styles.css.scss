@@ -13,7 +13,7 @@
   background: white;
 }
 
-.v6{
+.v6, .v9{
 
   h1{
     font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif; 
@@ -53,7 +53,7 @@
       span{
         display: block;
         float: left;
-        margin-right: .5em;
+        margin-right: .4em;
         opacity: 0;
       }
       span:nth-of-type(1){
@@ -74,6 +74,14 @@
       }
       span:nth-of-type(5){
          -webkit-animation:flipInY 800ms linear 1400ms 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+      span:nth-of-type(6){
+         -webkit-animation:flipInY 900ms linear 1400ms 1;
+         -webkit-animation-fill-mode: forwards;
+      }
+      span:nth-of-type(7){
+         -webkit-animation:flipInY 1000ms linear 1400ms 1;
          -webkit-animation-fill-mode: forwards;
       }
     }
@@ -371,3 +379,68 @@
     }
   }
 }
+
+.v9{
+  .oneByOne1,
+  #banner .oneByOne_item{
+    height: 410px;
+  }
+  .slide1{
+    padding-top: 140px;
+      h1{
+        font-size: 2.4em;
+        width: 430px;
+      }
+  }
+  .slide2{
+    h1{
+      width: 100%;
+      float: none;
+      margin-top: 20px;
+      text-align: center;
+      margin-bottom: .5em;
+    }
+  }
+  .slide3{
+    padding-top: 0;
+    position: relative;
+    text-align: left;
+    h1{
+      margin-top: 20px;
+      z-index: 3;
+      text-align: left;
+    }
+    .explore{
+      margin-left: 250px;
+    }
+    .london-sky{
+      position: absolute;
+      z-index: 1;
+      bottom: -4px;
+      left: 120px;
+    }
+    .london-eye{
+      width: 270px;
+      height: 270px;
+      position: absolute;
+      z-index: 4;
+      bottom: 12px;
+      right: 35px;
+      -webkit-animation-name: spin;
+      -webkit-animation-duration: 40000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+
+    }
+  }
+}
+
+
+@-webkit-keyframes spin {
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
