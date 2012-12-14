@@ -7,4 +7,5 @@ if (retina) { // if this is true...
   $("img").error(function () {
     $(this).unbind("error").attr("src", src);
   }); 
+});
 }
