@@ -37,11 +37,7 @@ function LogoRotatorInit(){
     $logo = $('.'+brandLogoSelector[random]),
     originalOpacity = $logo.css('opacity');
     
-    $logo.animate({opacity: 0.0}, 2000, function() {
-      var randomImage = brandLogoImages[Math.floor(Math.random() * brandLogoImages.length)];
-      $(this).children('img').attr('src',randomImage);
-      $(this).animate({opacity:originalOpacity},2000)
-    });
+
   }
 
   window.setInterval(function(){
