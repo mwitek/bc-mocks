@@ -36,12 +36,28 @@ function LogoRotatorInit(){
     var random = Math.floor(Math.random() * brandLogoSelector.length),
     $logo = $('.'+brandLogoSelector[random]),
     originalOpacity = $logo.css('opacity');
+    var allImages = $('.bursty-logos').children('div').children();
+    var logoFound = false;
     
-    $logo.animate({opacity: 0.0}, 2000, function() {
+    function replaceImage(){
       var randomImage = brandLogoImages[Math.floor(Math.random() * brandLogoImages.length)];
-      $(this).children('img').attr('src',randomImage);
-      $(this).animate({opacity:originalOpacity},2000)
-    });
+      logoFound = false
+      $.each(allImages,function(value,index){
+        if($(this).attr('src') == randomImage){
+          logoFound = true
+        }
+      });
+     if(!logoFound){
+      $logo.animate({opacity: 0.0}, 2000, function() {
+        $(this).children('img').attr('src',randomImage);
+        $(this).animate({opacity:originalOpacity},2000)
+      });
+    }else{
+      replaceImage();
+    }
+    }replaceImage()
+    
+  
   }
 
   window.setInterval(function(){
