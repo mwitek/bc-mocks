@@ -229,7 +229,9 @@ body.consumer footer {
 .v6 .oneByOne1, .v9 .oneByOne1, .v95 .oneByOne1 {
   overflow: visible; }
 .v6 .slide1 h1,
-.v6 .slide2 h1, .v9 .slide1 h1, .v9 .slide2 h1, .v95 .slide1 h1, .v95 .slide2 h1 {
+.v6 .slide2 h1, .v9 .slide1 h1,
+.v9 .slide2 h1, .v95 .slide1 h1,
+.v95 .slide2 h1 {
   float: left; }
 .v6 .arrowButton .prevArrow, .v9 .arrowButton .prevArrow, .v95 .arrowButton .prevArrow {
   background: url("assets/left_arrow.png") 2px center no-repeat;
@@ -412,7 +414,9 @@ body.consumer footer {
   .v6 form input[type=text], .v9 form input[type=text], .v95 form input[type=text] {
     border: 1px solid #0d95e3; }
   .v6 form input,
-  .v6 form a.explore, .v9 form input, .v9 form a.explore, .v95 form input, .v95 form a.explore {
+  .v6 form a.explore, .v9 form input,
+  .v9 form a.explore, .v95 form input,
+  .v95 form a.explore {
     font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
     font-size: 1.5em;
     display: block;
@@ -633,6 +637,101 @@ body.consumer footer {
       right: 440px;
       -webkit-animation-duration: 500ms;
       -webkit-animation-delay: 600ms; }
+    .v9 .slide1 .bursty-logos .brand_logo_1,
+    .v95 .slide1 .bursty-logos .brand_logo_1 {
+      /* Safari */
+      -webkit-transform: rotate(-20deg);
+      /* Firefox */
+      -moz-transform: rotate(-20deg);
+      /* IE */
+      -ms-transform: rotate(-20deg);
+      /* Opera */
+      -o-transform: rotate(-20deg);
+      /* Internet Explorer */
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
+      left: -10px;
+      opacity: 0.7;
+      position: relative;
+      top: 50px; }
+      .v9 .slide1 .bursty-logos .brand_logo_1 img,
+      .v95 .slide1 .bursty-logos .brand_logo_1 img {
+        width: 70px; }
+    .v9 .slide1 .bursty-logos .brand_logo_2,
+    .v95 .slide1 .bursty-logos .brand_logo_2 {
+      /* Safari */
+      -webkit-transform: rotate(10deg);
+      /* Firefox */
+      -moz-transform: rotate(10deg);
+      /* IE */
+      -ms-transform: rotate(10deg);
+      /* Opera */
+      -o-transform: rotate(10deg);
+      /* Internet Explorer */
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
+      left: 0px;
+      opacity: 0.9;
+      position: relative;
+      top: -35px; }
+      .v9 .slide1 .bursty-logos .brand_logo_2 img,
+      .v95 .slide1 .bursty-logos .brand_logo_2 img {
+        width: 85px; }
+    .v9 .slide1 .bursty-logos .brand_logo_3,
+    .v95 .slide1 .bursty-logos .brand_logo_3 {
+      /* Safari */
+      -webkit-transform: rotate(-18deg);
+      /* Firefox */
+      -moz-transform: rotate(-18deg);
+      /* IE */
+      -ms-transform: rotate(-18deg);
+      /* Opera */
+      -o-transform: rotate(-18deg);
+      /* Internet Explorer */
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
+      left: -20px;
+      opacity: 0.4;
+      position: relative;
+      top: 140px; }
+      .v9 .slide1 .bursty-logos .brand_logo_3 img,
+      .v95 .slide1 .bursty-logos .brand_logo_3 img {
+        width: 90px; }
+    .v9 .slide1 .bursty-logos .brand_logo_4,
+    .v95 .slide1 .bursty-logos .brand_logo_4 {
+      /* Safari */
+      -webkit-transform: rotate(-12deg);
+      /* Firefox */
+      -moz-transform: rotate(-12deg);
+      /* IE */
+      -ms-transform: rotate(-12deg);
+      /* Opera */
+      -o-transform: rotate(-12deg);
+      /* Internet Explorer */
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
+      left: -40px;
+      opacity: 0.8;
+      position: relative;
+      top: 20px; }
+      .v9 .slide1 .bursty-logos .brand_logo_4 img,
+      .v95 .slide1 .bursty-logos .brand_logo_4 img {
+        width: 110px; }
+    .v9 .slide1 .bursty-logos .brand_logo_5,
+    .v95 .slide1 .bursty-logos .brand_logo_5 {
+      /* Safari */
+      -webkit-transform: rotate(30deg);
+      /* Firefox */
+      -moz-transform: rotate(30deg);
+      /* IE */
+      -ms-transform: rotate(30deg);
+      /* Opera */
+      -o-transform: rotate(30deg);
+      /* Internet Explorer */
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
+      left: 100px;
+      opacity: 0.7;
+      position: relative;
+      top: -180px; }
+      .v9 .slide1 .bursty-logos .brand_logo_5 img,
+      .v95 .slide1 .bursty-logos .brand_logo_5 img {
+        width: 70px; }
 .v9 .slide2 h1,
 .v9 .slide4 h1,
 .v9 .slide5 h1,

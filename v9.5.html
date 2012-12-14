@@ -65,12 +65,12 @@
                    <img src="stylesheets/assets/bursty-logos/3.png" class="burst3 animated fadeInDown">
                    <img src="stylesheets/assets/bursty-logos/4.png" class="burst4 animated fadeInDown">
                    <img src="stylesheets/assets/bursty-logos/5.png" class="burst5 animated fadeInDown">
-                   <img src="stylesheets/assets/bursty-logos/6.png" class="burst6 logo animated fadeInDown">
+                   <img id="brand_logo_1" src="stylesheets/assets/bursty-logos/6.png" class="burst6 logo animated fadeInDown">
                    <img src="stylesheets/assets/bursty-logos/7.png" class="burst7 animated fadeInDown">
-                   <img src="stylesheets/assets/bursty-logos/8.png" class="burst8 animated fadeInDown">
-                   <img src="stylesheets/assets/bursty-logos/9.png" class="burst9 logo animated fadeInDown">
-                   <img src="stylesheets/assets/bursty-logos/10.png" class="burst10 logo animated fadeInDown">
-                   <img src="stylesheets/assets/bursty-logos/11.png" class="burst11 logo animated fadeInDown">
+                   <img id="brand_logo_2" src="stylesheets/assets/bursty-logos/8.png" class="burst8 animated fadeInDown">
+                   <img id="brand_logo_3" src="stylesheets/assets/bursty-logos/9.png" class="burst9 logo animated fadeInDown">
+                   <img id="brand_logo_4" src="stylesheets/assets/bursty-logos/10.png" class="burst10 logo animated fadeInDown">
+                   <img id="brand_logo_5" src="stylesheets/assets/bursty-logos/11.png" class="burst11 logo animated fadeInDown">
                    <img src="stylesheets/assets/bursty-logos/12.png" class="burst12 animated fadeInDown">
                </div>
               </div><!-- ./slide1 -->
@@ -156,8 +156,10 @@
 
   </div>
 </footer>
+
 </body>
 <script type="text/javascript" src="javascripts/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="javascripts/logo.rotator.js"></script>
 <script type="text/javascript" src="javascripts/jquery.onebyone.js"></script>
   <script type="text/javascript"> 
     $(document).ready(function(){
@@ -171,12 +173,14 @@
         showButton: true,
         enableDrag: true,
         showArrow: true,
-        slideShow: true,
+        slideShow: false,
         responsive: false,
         minWidth: 960,
         autoHideButton: false
       });
     })
   </script>
+
+
 
 </html>
