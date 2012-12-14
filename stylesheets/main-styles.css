@@ -563,92 +563,92 @@ body.consumer footer {
       position: absolute; }
     .v9 .slide1 .bursty-logos .burst1,
     .v95 .slide1 .bursty-logos .burst1 {
-      top: -10px;
+      top: -15px;
       right: 190px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 900ms; }
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 400ms; }
     .v9 .slide1 .bursty-logos .burst2,
     .v95 .slide1 .bursty-logos .burst2 {
       top: -5px;
       right: 460px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 1000ms; }
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 900ms; }
     .v9 .slide1 .bursty-logos .burst3,
     .v95 .slide1 .bursty-logos .burst3 {
-      top: 100px;
+      top: 60px;
       right: 0px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 600ms; }
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 300ms; }
     .v9 .slide1 .bursty-logos .burst4,
     .v95 .slide1 .bursty-logos .burst4 {
-      top: 200px;
+      top: 185px;
       right: 10px;
-      -webkit-animation-duration: 500ms;
+      -webkit-animation-duration: 400ms;
       -webkit-animation-delay: 200ms; }
     .v9 .slide1 .bursty-logos .burst5,
     .v95 .slide1 .bursty-logos .burst5 {
-      top: 0px;
-      right: 500px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 1600ms; }
+      top: -15px;
+      right: 525px;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 1200ms; }
     .v9 .slide1 .bursty-logos .burst6,
     .v95 .slide1 .bursty-logos .burst6 {
-      top: 10px;
-      right: 310px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 200ms; }
+      top: 5px;
+      right: 315px;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 100ms; }
     .v9 .slide1 .bursty-logos .burst7,
     .v95 .slide1 .bursty-logos .burst7 {
       top: 80px;
-      right: 280px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 1800ms; }
+      right: 275px;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 1400ms; }
     .v9 .slide1 .bursty-logos .burst8,
     .v95 .slide1 .bursty-logos .burst8 {
-      top: 65px;
-      right: 165px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 400ms; }
+      top: 55px;
+      right: 160px;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 500ms; }
     .v9 .slide1 .bursty-logos .burst9,
     .v95 .slide1 .bursty-logos .burst9 {
-      top: 0px;
-      right: 40px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 1300ms; }
+      top: 5px;
+      right: 35px;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 600ms; }
     .v9 .slide1 .bursty-logos .burst10,
     .v95 .slide1 .bursty-logos .burst10 {
-      top: 40px;
-      right: 390px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 1200ms; }
+      top: 35px;
+      right: 380px;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 800ms; }
     .v9 .slide1 .bursty-logos .burst11,
     .v95 .slide1 .bursty-logos .burst11 {
-      top: 110px;
-      right: 20px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 1600ms; }
+      top: 105px;
+      right: 5px;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 1400ms; }
     .v9 .slide1 .bursty-logos .burst12,
     .v95 .slide1 .bursty-logos .burst12 {
-      top: 180px;
+      top: 160px;
       right: 440px;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-delay: 600ms; }
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-delay: 400ms; }
     .v9 .slide1 .bursty-logos .brand_logo_1,
     .v95 .slide1 .bursty-logos .brand_logo_1 {
       /* Safari */
-      -webkit-transform: rotate(-20deg);
+      -webkit-transform: rotate(-30deg);
       /* Firefox */
-      -moz-transform: rotate(-20deg);
+      -moz-transform: rotate(-30deg);
       /* IE */
-      -ms-transform: rotate(-20deg);
+      -ms-transform: rotate(-30deg);
       /* Opera */
-      -o-transform: rotate(-20deg);
+      -o-transform: rotate(-30deg);
       /* Internet Explorer */
       filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
-      left: -10px;
+      left: -5px;
       opacity: 0.7;
       position: relative;
-      top: 50px; }
+      top: 85px; }
       .v9 .slide1 .bursty-logos .brand_logo_1 img,
       .v95 .slide1 .bursty-logos .brand_logo_1 img {
         width: 70px; }
@@ -664,13 +664,13 @@ body.consumer footer {
       -o-transform: rotate(10deg);
       /* Internet Explorer */
       filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
-      left: 0px;
+      left: 5px;
       opacity: 0.9;
       position: relative;
       top: -35px; }
       .v9 .slide1 .bursty-logos .brand_logo_2 img,
       .v95 .slide1 .bursty-logos .brand_logo_2 img {
-        width: 85px; }
+        width: 90px; }
     .v9 .slide1 .bursty-logos .brand_logo_3,
     .v95 .slide1 .bursty-logos .brand_logo_3 {
       /* Safari */
@@ -683,13 +683,13 @@ body.consumer footer {
       -o-transform: rotate(-18deg);
       /* Internet Explorer */
       filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
-      left: -20px;
-      opacity: 0.4;
+      left: -10px;
+      opacity: 0.5;
       position: relative;
       top: 140px; }
       .v9 .slide1 .bursty-logos .brand_logo_3 img,
       .v95 .slide1 .bursty-logos .brand_logo_3 img {
-        width: 90px; }
+        width: 120px; }
     .v9 .slide1 .bursty-logos .brand_logo_4,
     .v95 .slide1 .bursty-logos .brand_logo_4 {
       /* Safari */
@@ -702,13 +702,13 @@ body.consumer footer {
       -o-transform: rotate(-12deg);
       /* Internet Explorer */
       filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
-      left: -40px;
+      left: -30px;
       opacity: 0.8;
       position: relative;
       top: 20px; }
       .v9 .slide1 .bursty-logos .brand_logo_4 img,
       .v95 .slide1 .bursty-logos .brand_logo_4 img {
-        width: 110px; }
+        width: 120px; }
     .v9 .slide1 .bursty-logos .brand_logo_5,
     .v95 .slide1 .bursty-logos .brand_logo_5 {
       /* Safari */
@@ -721,19 +721,21 @@ body.consumer footer {
       -o-transform: rotate(30deg);
       /* Internet Explorer */
       filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ie-angle);
-      left: 100px;
-      opacity: 0.7;
+      left: 115px;
+      opacity: 0.9;
       position: relative;
       top: -180px; }
       .v9 .slide1 .bursty-logos .brand_logo_5 img,
       .v95 .slide1 .bursty-logos .brand_logo_5 img {
-        width: 70px; }
+        width: 80px; }
+.v9 .slide5 h1,
 .v9 .slide2 h1,
 .v9 .slide4 h1,
-.v9 .slide5 h1,
+.v9 h1.fold_out,
+.v95 .slide5 h1,
 .v95 .slide2 h1,
 .v95 .slide4 h1,
-.v95 .slide5 h1 {
+.v95 h1.fold_out {
   width: 100%;
   float: none;
   margin-top: 20px;
@@ -741,54 +743,66 @@ body.consumer footer {
   text-align: center;
   margin-bottom: .5em;
   overflow: hidden; }
+  .v9 .slide5 h1 span,
   .v9 .slide2 h1 span,
   .v9 .slide4 h1 span,
-  .v9 .slide5 h1 span,
+  .v9 h1.fold_out span,
+  .v95 .slide5 h1 span,
   .v95 .slide2 h1 span,
   .v95 .slide4 h1 span,
-  .v95 .slide5 h1 span {
+  .v95 h1.fold_out span {
     display: block;
     float: left;
     margin-right: .4em;
     opacity: 0; }
+  .v9 .slide5 h1 span:nth-of-type(1),
   .v9 .slide2 h1 span:nth-of-type(1),
   .v9 .slide4 h1 span:nth-of-type(1),
-  .v9 .slide5 h1 span:nth-of-type(1),
+  .v9 h1.fold_out span:nth-of-type(1),
+  .v95 .slide5 h1 span:nth-of-type(1),
   .v95 .slide2 h1 span:nth-of-type(1),
   .v95 .slide4 h1 span:nth-of-type(1),
-  .v95 .slide5 h1 span:nth-of-type(1) {
+  .v95 h1.fold_out span:nth-of-type(1) {
     -webkit-animation: flipInY 800ms linear 0 1;
     -webkit-animation-fill-mode: forwards; }
+  .v9 .slide5 h1 span:nth-of-type(2),
   .v9 .slide2 h1 span:nth-of-type(2),
   .v9 .slide4 h1 span:nth-of-type(2),
-  .v9 .slide5 h1 span:nth-of-type(2),
+  .v9 h1.fold_out span:nth-of-type(2),
+  .v95 .slide5 h1 span:nth-of-type(2),
   .v95 .slide2 h1 span:nth-of-type(2),
   .v95 .slide4 h1 span:nth-of-type(2),
-  .v95 .slide5 h1 span:nth-of-type(2) {
+  .v95 h1.fold_out span:nth-of-type(2) {
     -webkit-animation: flipInY 800ms linear 200ms 1;
     -webkit-animation-fill-mode: forwards; }
+  .v9 .slide5 h1 span:nth-of-type(3),
   .v9 .slide2 h1 span:nth-of-type(3),
   .v9 .slide4 h1 span:nth-of-type(3),
-  .v9 .slide5 h1 span:nth-of-type(3),
+  .v9 h1.fold_out span:nth-of-type(3),
+  .v95 .slide5 h1 span:nth-of-type(3),
   .v95 .slide2 h1 span:nth-of-type(3),
   .v95 .slide4 h1 span:nth-of-type(3),
-  .v95 .slide5 h1 span:nth-of-type(3) {
+  .v95 h1.fold_out span:nth-of-type(3) {
     -webkit-animation: flipInY 800ms linear 300ms 1;
     -webkit-animation-fill-mode: forwards; }
+  .v9 .slide5 h1 span:nth-of-type(4),
   .v9 .slide2 h1 span:nth-of-type(4),
   .v9 .slide4 h1 span:nth-of-type(4),
-  .v9 .slide5 h1 span:nth-of-type(4),
+  .v9 h1.fold_out span:nth-of-type(4),
+  .v95 .slide5 h1 span:nth-of-type(4),
   .v95 .slide2 h1 span:nth-of-type(4),
   .v95 .slide4 h1 span:nth-of-type(4),
-  .v95 .slide5 h1 span:nth-of-type(4) {
+  .v95 h1.fold_out span:nth-of-type(4) {
     -webkit-animation: flipInY 800ms linear 400ms 1;
     -webkit-animation-fill-mode: forwards; }
+  .v9 .slide5 h1 span:nth-of-type(5),
   .v9 .slide2 h1 span:nth-of-type(5),
   .v9 .slide4 h1 span:nth-of-type(5),
-  .v9 .slide5 h1 span:nth-of-type(5),
+  .v9 h1.fold_out span:nth-of-type(5),
+  .v95 .slide5 h1 span:nth-of-type(5),
   .v95 .slide2 h1 span:nth-of-type(5),
   .v95 .slide4 h1 span:nth-of-type(5),
-  .v95 .slide5 h1 span:nth-of-type(5) {
+  .v95 h1.fold_out span:nth-of-type(5) {
     -webkit-animation: flipInY 800ms linear 500ms 1;
     -webkit-animation-fill-mode: forwards; }
 .v9 .slide3,
@@ -849,3 +863,6 @@ body.consumer footer {
 
 .signoff {
   padding-top: 0 !important; }
+
+.v96 .hero_offer h1 {
+  margin-left: 256px; }

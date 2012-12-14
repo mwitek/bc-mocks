@@ -48,9 +48,9 @@ function LogoRotatorInit(){
         }
       });
      if(!logoFound){
-      $logo.animate({opacity: 0.0}, 2000, function() {
+      $logo.animate({opacity: 0.0}, 1000, function() {
         $(this).children('img').attr('src',randomImage);
-        $(this).animate({opacity:originalOpacity},2000)
+        $(this).animate({opacity:originalOpacity},1000)
       });
     }else{
       replaceImage();
@@ -62,7 +62,7 @@ function LogoRotatorInit(){
 
   window.setInterval(function(){
     randomLogoChange();
-  }, 6000);
+  }, 2200);
 
 }
 LogoRotatorInit();

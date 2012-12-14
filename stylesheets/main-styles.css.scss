@@ -455,176 +455,176 @@ body.consumer footer{
       }
 
       .burst1{ //plug
-        top: -10px;
+        top: -15px;
         right: 190px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 900ms;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 400ms;
       }
       .burst2{ //masks
         top: -5px;
         right: 460px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 1000ms;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 900ms;
       }
       .burst3{ //cart
-        top: 100px;
+        top: 60px;
         right: 0px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 600ms;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 300ms;
 
       }
       .burst4{ //food
-        top:200px;
+        top:185px;
         right: 10px;
-        -webkit-animation-duration: 500ms;
+        -webkit-animation-duration: 400ms;
         -webkit-animation-delay: 200ms;
       }
       .burst5{ //airplane
-        top: 0px;
-        right: 500px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 1600ms;
+        top: -15px;
+        right: 525px;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 1200ms;
       }
       .burst6{ //rac logo
-        top: 10px;
-        right: 310px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 200ms;
+        top: 5px;
+        right: 315px;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 100ms;
       }
       .burst7{ //kids
         top: 80px;
-        right: 280px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 1800ms;
+        right: 275px;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 1400ms;
       }
       .burst8{ //ba logo
-        top: 65px;
-        right: 165px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 400ms;
+        top: 55px;
+        right: 160px;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 500ms;
       }
       .burst9{ //boots logo
-        top: 0px;
-        right: 40px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 1300ms;
+        top: 5px;
+        right: 35px;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 600ms;
       }
       .burst10{ //virgin logo
-        top: 40px;
-        right: 390px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 1200ms;
+        top: 35px;
+        right: 380px;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 800ms;
       }
       .burst11{ //shell logo
-        top: 110px;
-        right: 20px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 1600ms;
+        top: 105px;
+        right: 5px;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 1400ms;
       }
       .burst12{ //bottle
-        top: 180px;
+        top: 160px;
         right: 440px;
-        -webkit-animation-duration: 500ms;
-        -webkit-animation-delay: 600ms;
+        -webkit-animation-duration: 400ms;
+        -webkit-animation-delay: 400ms;
       }
 
       .brand_logo_1{
-         @include rotate(-20deg,3);
-         left:-10px;
+         @include rotate(-30deg,3);
+         left:-5px;
          opacity: 0.7;
          position: relative;
-         top:50px;
+         top:85px;
          img{
           width:70px;
         }
       }
       .brand_logo_2{
         @include rotate(10deg,3);
-        left:0px;
+        left:5px;
         opacity: 0.9;
         position: relative;
         top:-35px;
         
         img{
-          width:85px;
+          width:90px;
         }
       }
       .brand_logo_3{
         @include rotate(-18deg,3);
-        left:-20px;
-        opacity: 0.4;
+        left:-10px;
+        opacity: 0.5;
         position: relative;
         top:140px;
         
         img{
-          width:90px;
+          width:120px;
         }
       }
 
       .brand_logo_4{
         @include rotate(-12deg,3);
-        left:-40px;
+        left:-30px;
         opacity: 0.8;
         position: relative;
         top:20px;
         
         img{
-          width:110px;
+          width:120px;
         }
       }
 
       .brand_logo_5{
         @include rotate(30deg,3);
-        left:100px;
-        opacity: 0.7;
+        left:115px;
+        opacity: 0.9;
         position: relative;
         top:-180px;
         
         img{
-          width:70px;
+          width:80px;
         }
       }
     }
   }//end .slide1
-  .slide2,
-  .slide4,
-  .slide5{
-    h1{
-      width: 100%;
-      float: none;
-      margin-top: 20px;
-      margin-left: 120px;
-      text-align: center;
-      margin-bottom: .5em;
-      overflow: hidden;
-      span{
-        display: block;
-        float: left;
-        margin-right: .4em;
-        opacity: 0;
-      }
-      span:nth-of-type(1){
-         -webkit-animation:flipInY 800ms linear 0 1;
-         -webkit-animation-fill-mode: forwards;
-      }
-      span:nth-of-type(2){
-         -webkit-animation:flipInY 800ms linear 200ms 1;
-         -webkit-animation-fill-mode: forwards;
-      }
-      span:nth-of-type(3){
-         -webkit-animation:flipInY 800ms linear 300ms 1;
-         -webkit-animation-fill-mode: forwards;
-      }
-      span:nth-of-type(4){
-         -webkit-animation:flipInY 800ms linear 400ms 1;
-         -webkit-animation-fill-mode: forwards;
-      }
-      span:nth-of-type(5){
-         -webkit-animation:flipInY 800ms linear 500ms 1;
-         -webkit-animation-fill-mode: forwards;
-      }
-    } //end .h1
-  }//end .slide2
+
+  .slide5 h1,
+  .slide2 h1,
+  .slide4 h1,
+  h1.fold_out{
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+    margin-left: 120px;
+    text-align: center;
+    margin-bottom: .5em;
+    overflow: hidden;
+    span{
+      display: block;
+      float: left;
+      margin-right: .4em;
+      opacity: 0;
+    }
+    span:nth-of-type(1){
+       -webkit-animation:flipInY 800ms linear 0 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+    span:nth-of-type(2){
+       -webkit-animation:flipInY 800ms linear 200ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+    span:nth-of-type(3){
+       -webkit-animation:flipInY 800ms linear 300ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+    span:nth-of-type(4){
+       -webkit-animation:flipInY 800ms linear 400ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+    span:nth-of-type(5){
+       -webkit-animation:flipInY 800ms linear 500ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+  } //end .h1
   .slide3{
     padding-top: 0;
     position: relative;
@@ -692,6 +692,10 @@ body.consumer footer{
 }
 
 //custom stuff for just v95
-.v95{
-
+.v96{
+  .hero_offer{
+    h1{
+      margin-left: 256px;
+    }
+  }
 }
