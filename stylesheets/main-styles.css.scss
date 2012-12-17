@@ -692,10 +692,15 @@ body.consumer footer{
 }
 
 //custom stuff for just v95
-.v96{
-  .hero_offer{
-    h1{
-      margin-left: 256px;
-    }
-  }
+// .v96{
+//   .hero_offer{
+//     h1{
+//       margin-left: 256px;
+//     }
+//   }
+//}
+
+//emergency copy change styles
+.v96 .slide1 h1{
+  font-size: 2.7em;
 }
