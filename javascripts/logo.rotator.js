@@ -60,9 +60,9 @@ function LogoRotatorInit(){
   
   }
 
-  window.setInterval(function(){
-    randomLogoChange();
-  }, 2200);
+  // window.setInterval(function(){
+  //   randomLogoChange();
+  // }, 2200);
 
 }
 LogoRotatorInit();
