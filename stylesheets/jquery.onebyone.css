@@ -80,43 +80,6 @@
 	top: 0; 
 	left: 0;
 }
-#banner .slide-caption {
-	
-	}
-	#banner h2 {
-		position: absolute;
-		width: 265px;
-		top: 77px;
-		left:940px;
-		margin-left: -300px;
-		font-family: 'Oswald', sans-serif;
-		color:#fff;
-		text-shadow:none;
-		font-size:50px;
-		line-height:1em;
-		margin-bottom:.2em;
-		text-transform:uppercase;
-		letter-spacing:-1px; 
-		}
-	#banner p.excerpt {
-		position:absolute;
-		width: 265px;
-		left:940px;
-		margin-left: -300px;
-		top: 189px;
-		line-height:22px;
-		font-size:14px;
-		color:#f3f3f3;
-		}
-	#banner .btn-holder {
-		position:absolute;
-		top:329px;
-		left:940px;
-		margin-left: -300px;
-		width:265px;
-		}
-
-
 
 .animate0{
    -webkit-animation-duration: .6s;

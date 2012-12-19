@@ -30,6 +30,9 @@ body.consumer footer{
   .content{
     padding:0px;
   }
+  h1, h2{
+    color: white;
+  }
 }
 
 .buttonArea{
@@ -41,12 +44,23 @@ body.consumer footer{
 
 #slider.light{
   background: white;
+  h1, h2{
+    color: $bc1;
+  }
+}
+
+h1, h2{
+  font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif; 
+  font-weight: normal !important;
+}
+
+h2{
+  font-size: 1.4em;
 }
 
 .v6, .v9, .v95{
 
   h1{
-    font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif; 
     color: white;
     font-size: 2.5em;
     line-height: 1.2;
@@ -624,6 +638,19 @@ body.consumer footer{
        -webkit-animation:flipInY 800ms linear 500ms 1;
        -webkit-animation-fill-mode: forwards;
     }
+    span:nth-of-type(6){
+       -webkit-animation:flipInY 800ms linear 600ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+    span:nth-of-type(7){
+       -webkit-animation:flipInY 800ms linear 700ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+    span:nth-of-type(8){
+       -webkit-animation:flipInY 800ms linear 800ms 1;
+       -webkit-animation-fill-mode: forwards;
+    }
+
   } //end .h1
   .slide3{
     padding-top: 0;
@@ -703,4 +730,23 @@ body.consumer footer{
 //emergency copy change styles
 .v96 .slide1 h1{
   font-size: 2.7em;
+}
+
+//styles for v9.7
+.v97{
+  .hero_offer,
+  .three_offer_pane{
+    h1{
+      margin-left: 195px;
+    }
+  }
+  .info_pane{
+    h1{
+      margin-left: 190px;
+      margin-bottom: 0;
+    }
+    h2{
+      margin-bottom: .2em;
+    }
+  }
 }

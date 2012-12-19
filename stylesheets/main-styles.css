@@ -207,6 +207,8 @@ body.consumer footer {
   background: url("assets/slider-bg.jpg") repeat-x; }
   #slider .content {
     padding: 0px; }
+  #slider h1, #slider h2 {
+    color: white; }
 
 .buttonArea {
   z-index: 100; }
@@ -215,9 +217,17 @@ body.consumer footer {
 
 #slider.light {
   background: white; }
+  #slider.light h1, #slider.light h2 {
+    color: #0d95e3; }
+
+h1, h2 {
+  font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
+  font-weight: normal !important; }
+
+h2 {
+  font-size: 1.4em; }
 
 .v6 h1, .v9 h1, .v95 h1 {
-  font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
   color: white;
   font-size: 2.5em;
   line-height: 1.2;
@@ -229,9 +239,7 @@ body.consumer footer {
 .v6 .oneByOne1, .v9 .oneByOne1, .v95 .oneByOne1 {
   overflow: visible; }
 .v6 .slide1 h1,
-.v6 .slide2 h1, .v9 .slide1 h1,
-.v9 .slide2 h1, .v95 .slide1 h1,
-.v95 .slide2 h1 {
+.v6 .slide2 h1, .v9 .slide1 h1, .v9 .slide2 h1, .v95 .slide1 h1, .v95 .slide2 h1 {
   float: left; }
 .v6 .arrowButton .prevArrow, .v9 .arrowButton .prevArrow, .v95 .arrowButton .prevArrow {
   background: url("assets/left_arrow.png") 2px center no-repeat;
@@ -414,9 +422,7 @@ body.consumer footer {
   .v6 form input[type=text], .v9 form input[type=text], .v95 form input[type=text] {
     border: 1px solid #0d95e3; }
   .v6 form input,
-  .v6 form a.explore, .v9 form input,
-  .v9 form a.explore, .v95 form input,
-  .v95 form a.explore {
+  .v6 form a.explore, .v9 form input, .v9 form a.explore, .v95 form input, .v95 form a.explore {
     font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
     font-size: 1.5em;
     display: block;
@@ -809,6 +815,36 @@ body.consumer footer {
   .v95 h1.fold_out span:nth-of-type(5) {
     -webkit-animation: flipInY 800ms linear 500ms 1;
     -webkit-animation-fill-mode: forwards; }
+  .v9 .slide5 h1 span:nth-of-type(6),
+  .v9 .slide2 h1 span:nth-of-type(6),
+  .v9 .slide4 h1 span:nth-of-type(6),
+  .v9 h1.fold_out span:nth-of-type(6),
+  .v95 .slide5 h1 span:nth-of-type(6),
+  .v95 .slide2 h1 span:nth-of-type(6),
+  .v95 .slide4 h1 span:nth-of-type(6),
+  .v95 h1.fold_out span:nth-of-type(6) {
+    -webkit-animation: flipInY 800ms linear 600ms 1;
+    -webkit-animation-fill-mode: forwards; }
+  .v9 .slide5 h1 span:nth-of-type(7),
+  .v9 .slide2 h1 span:nth-of-type(7),
+  .v9 .slide4 h1 span:nth-of-type(7),
+  .v9 h1.fold_out span:nth-of-type(7),
+  .v95 .slide5 h1 span:nth-of-type(7),
+  .v95 .slide2 h1 span:nth-of-type(7),
+  .v95 .slide4 h1 span:nth-of-type(7),
+  .v95 h1.fold_out span:nth-of-type(7) {
+    -webkit-animation: flipInY 800ms linear 700ms 1;
+    -webkit-animation-fill-mode: forwards; }
+  .v9 .slide5 h1 span:nth-of-type(8),
+  .v9 .slide2 h1 span:nth-of-type(8),
+  .v9 .slide4 h1 span:nth-of-type(8),
+  .v9 h1.fold_out span:nth-of-type(8),
+  .v95 .slide5 h1 span:nth-of-type(8),
+  .v95 .slide2 h1 span:nth-of-type(8),
+  .v95 .slide4 h1 span:nth-of-type(8),
+  .v95 h1.fold_out span:nth-of-type(8) {
+    -webkit-animation: flipInY 800ms linear 800ms 1;
+    -webkit-animation-fill-mode: forwards; }
 .v9 .slide3,
 .v95 .slide3 {
   padding-top: 0;
@@ -870,3 +906,12 @@ body.consumer footer {
 
 .v96 .slide1 h1 {
   font-size: 2.7em; }
+
+.v97 .hero_offer h1,
+.v97 .three_offer_pane h1 {
+  margin-left: 195px; }
+.v97 .info_pane h1 {
+  margin-left: 190px;
+  margin-bottom: 0; }
+.v97 .info_pane h2 {
+  margin-bottom: .2em; }
