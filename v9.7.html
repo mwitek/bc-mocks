@@ -79,12 +79,12 @@
           <div class="oneByOne_item categories">
             <h1 class="fold_out"><span>Find</span><span> whatever</span><span> you’re</span><span> looking for</span></h1>
             <div class="img_grid">
-                <img src="stylesheets/assets/cat-icons/icon-white01.png" class="cat-icon animated fadeInDown">
-                <img src="stylesheets/assets/cat-icons/icon-white02.png" class="cat-icon animated fadeInDown">
-                <img src="stylesheets/assets/cat-icons/icon-white03.png" class="cat-icon animated fadeInDown">
-                <img src="stylesheets/assets/cat-icons/icon-white04.png" class="cat-icon animated fadeInDown">
-                <img src="stylesheets/assets/cat-icons/icon-white05.png" class="cat-icon animated fadeInDown">
-                <img src="stylesheets/assets/cat-icons/icon-white06.png" class="cat-icon animated fadeInDown">
+                <img src="stylesheets/assets/cat-icons/icon-white01.png" class="rotator_icon cat-icon animated fadeInDown">
+                <img src="stylesheets/assets/cat-icons/icon-white02.png" class="rotator_icon cat-icon animated fadeInDown">
+                <img src="stylesheets/assets/cat-icons/icon-white03.png" class="rotator_icon cat-icon animated fadeInDown">
+                <img src="stylesheets/assets/cat-icons/icon-white04.png" class="rotator_icon cat-icon animated fadeInDown">
+                <img src="stylesheets/assets/cat-icons/icon-white05.png" class="rotator_icon cat-icon animated fadeInDown">
+                <img src="stylesheets/assets/cat-icons/icon-white06.png" class="rotator_icon cat-icon animated fadeInDown">
             </div>
             <form>
               <fieldset>
@@ -170,6 +170,8 @@
 <script type="text/javascript" src="javascripts/retina.js"></script>
 <script type="text/javascript" src="javascripts/logo.rotator.js"></script>
 <script type="text/javascript" src="javascripts/jquery.onebyone.js"></script>
+<script type="text/javascript" src="javascripts/image.rotator.v1.js"></script>
+
   <script type="text/javascript"> 
     $(document).ready(function(){
       $('#banner').oneByOne({
@@ -189,7 +191,49 @@
       });
     })
   </script>
+<script type="text/javascript">
 
+var retina = window.devicePixelRatio > 1;
+if (retina) {
+
+var images = ['stylesheets/assets/bursty-logos/brand-logos/boots-logo@2x.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/brit-gas-logo@2x.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/britsh-logo@2x.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/carphone-logo@2x.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/domino-logo@2x.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/gap-logo@2x.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/goldsmith-logo@2x.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/hilton-logo@2x.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/rac-logo@2x.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/shell-logo@2x.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/virgin-logo@2x.png'];
+} else {
+
+var images = ['stylesheets/assets/bursty-logos/brand-logos/boots-logo.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/brit-gas-logo.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/britsh-logo.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/carphone-logo.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/domino-logo.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/gap-logo.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/goldsmith-logo.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/hilton-logo.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/rac-logo.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/shell-logo.png',
+                          'stylesheets/assets/bursty-logos/brand-logos/virgin-logo.png'];
+}
+
+var icons = ['stylesheets/assets/cat-icons/icon-white01.png','stylesheets/assets/cat-icons/icon-white02.png','stylesheets/assets/cat-icons/icon-white03.png','stylesheets/assets/cat-icons/icon-white04.png','stylesheets/assets/cat-icons/icon-white05.png','stylesheets/assets/cat-icons/icon-white06.png','stylesheets/assets/cat-icons/icon-white07.png','stylesheets/assets/cat-icons/icon-white08.png','stylesheets/assets/cat-icons/icon-white09.png','stylesheets/assets/cat-icons/icon-white10.png','stylesheets/assets/cat-icons/icon-white11.png','stylesheets/assets/cat-icons/icon-white12.png']
+
+LogoRotatorInit('.rotator_image',images);
+
+LogoRotatorInit('.rotator_icon',icons);
+
+
+
+
+
+
+</script>
 
 
 </html>
