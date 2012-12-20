@@ -982,11 +982,10 @@ h2 {
 .img_grid {
   float: left;
   margin-left: 20px;
-  margin-top: 50px;
   width: 50%; }
   .img_grid img {
     margin: 10px; }
 
 .categories form {
   margin-left: 40px;
-  margin-top: 90px; }
+  margin-top: 40px; }
