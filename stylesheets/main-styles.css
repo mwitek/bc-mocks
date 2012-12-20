@@ -268,7 +268,9 @@ h2 {
 .v6 .oneByOne1, .v9 .oneByOne1, .v95 .oneByOne1 {
   overflow: visible; }
 .v6 .slide1 h1,
-.v6 .slide2 h1, .v9 .slide1 h1, .v9 .slide2 h1, .v95 .slide1 h1, .v95 .slide2 h1 {
+.v6 .slide2 h1, .v9 .slide1 h1,
+.v9 .slide2 h1, .v95 .slide1 h1,
+.v95 .slide2 h1 {
   float: left; }
 .v6 .arrowButton .prevArrow, .v9 .arrowButton .prevArrow, .v95 .arrowButton .prevArrow {
   background: url("assets/left_arrow.png") 2px center no-repeat;
@@ -468,7 +470,9 @@ h2 {
   .v6 form input[type=text], .v9 form input[type=text], .v95 form input[type=text] {
     border: 1px solid #0d95e3; }
   .v6 form input,
-  .v6 form a.explore, .v9 form input, .v9 form a.explore, .v95 form input, .v95 form a.explore {
+  .v6 form a.explore, .v9 form input,
+  .v9 form a.explore, .v95 form input,
+  .v95 form a.explore {
     font-family: 'BarclaycardCoLtRegular', tahoma, sans-serif;
     font-size: 1.5em;
     display: block;
@@ -993,6 +997,8 @@ h2 {
       position: relative; }
   .v99 .slide1 .img_grid img {
     box-shadow: none; }
+.v99 .slide4 h1 {
+  margin-left: 200px; }
 
 .img_grid {
   float: left;
