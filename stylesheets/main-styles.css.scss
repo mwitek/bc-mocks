@@ -788,11 +788,11 @@ h2{
     float: right;
     padding-right: 55px;
   }
-  .categories,
   .slide1{
-    padding-top: 40px;
+    padding-top: 0px;
     .headline{
       display: block;
+      margin-top: 40px;
       overflow: hidden;
       text-align: center;
       width:100%;
@@ -811,11 +811,10 @@ h2{
       position: relative;
       top:2px;
       width: 430px;
+      .random_image_wrap,
       img{
         display: inline-block;
         position: relative;
-        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-        margin: 5px;
       }
     }
 
@@ -825,11 +824,24 @@ h2{
       }
     }
   }
-  .categories{
-      form{
-    float: right;
-    padding-right: 55px;
-    }
+}
+
+
+.img_grid{
+  float: left;
+  margin-left: 20px;
+  width: 50%;
+.random_image_wrap{
+  display: inline-block;
+}
+  img{
+    margin: 10px;
   }
 }
 
+.categories {
+  form{
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+}
