@@ -998,11 +998,13 @@ h2 {
     .v99 .categories .bursty-logos img,
     .v99 .slide1 .img_grid img,
     .v99 .slide1 .bursty-logos img {
-      background: #ffffff;
       display: inline-block;
       position: relative;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
       margin: 5px; }
+  .v99 .categories .img_grid img,
+  .v99 .slide1 .img_grid img {
+    box-shadow: none; }
 .v99 .categories form {
   float: right;
   padding-right: 55px; }
