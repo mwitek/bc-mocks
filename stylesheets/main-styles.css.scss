@@ -41,6 +41,7 @@ header{
   background-image: -webkit-linear-gradient(top, rgb(24,147,224) 0%, rgb(20,132,199) 50%, rgb(16,113,171) 100%);
   background-image: -moz-linear-gradient(top, rgb(24,147,224) 0%, rgb(20,132,199) 50%, rgb(16,113,171) 100%);  
   box-shadow: inset 0 4px 10px rgba(0, 0, 0, .1);
+  margin-bottom: 25px;
   .content{
     padding:0px;
   }
@@ -58,6 +59,7 @@ header{
 
 #slider.light{
   background: white;
+  @include curved-shadow(bottom);
   h1, h2{
     color: $bc1;
   }
@@ -809,7 +811,7 @@ h2{
 .img_grid{
   float: left;
   margin-left: 20px;
-  margin-top: 45px;
+  margin-top: 50px;
   width: 50%;
   img{
     margin: 10px;
