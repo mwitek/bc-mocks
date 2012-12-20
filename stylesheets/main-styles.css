@@ -217,7 +217,8 @@ header {
   background-image: #1483c6;
   background-image: -webkit-linear-gradient(top, #1893e0 0%, #1484c7 50%, #1071ab 100%);
   background-image: -moz-linear-gradient(top, #1893e0 0%, #1484c7 50%, #1071ab 100%);
-  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px; }
   #slider .content {
     padding: 0px; }
   #slider h1, #slider h2 {
@@ -229,7 +230,22 @@ header {
     background: #0d95e3 !important; }
 
 #slider.light {
-  background: white; }
+  background: white;
+  background: white;
+  position: relative; }
+  #slider.light::before {
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    content: "";
+    position: absolute;
+    z-index: -2;
+    -moz-border-radius: 100px/10px;
+    border-radius: 100px/10px;
+    top: 50%;
+    bottom: 0;
+    left: 10px;
+    right: 10px; }
   #slider.light h1, #slider.light h2 {
     color: #0d95e3; }
 
@@ -953,26 +969,40 @@ h2 {
 .v99 form {
   float: right;
   padding-right: 55px; }
+.v99 .categories,
 .v99 .slide1 {
   padding-top: 40px; }
+  .v99 .categories .headline,
   .v99 .slide1 .headline {
     display: block;
     overflow: hidden;
     text-align: center;
     width: 100%; }
+    .v99 .categories .headline h1,
     .v99 .slide1 .headline h1 {
       float: none;
       width: 100%; }
+      .v99 .categories .headline h1 span,
       .v99 .slide1 .headline h1 span {
         display: inline-block;
         float: none; }
+  .v99 .categories .img_grid,
+  .v99 .categories .bursty-logos,
+  .v99 .slide1 .img_grid,
   .v99 .slide1 .bursty-logos {
     left: 50px;
     position: relative;
     top: 2px;
     width: 430px; }
-    .v99 .slide1 .bursty-logos .logo {
+    .v99 .categories .img_grid img,
+    .v99 .categories .bursty-logos img,
+    .v99 .slide1 .img_grid img,
+    .v99 .slide1 .bursty-logos img {
+      background: #ffffff;
       display: inline-block;
       position: relative;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
       margin: 5px; }
+.v99 .categories form {
+  float: right;
+  padding-right: 55px; }
