@@ -780,3 +780,28 @@ h2{
     }
   }
 }
+
+.v99{
+  form{
+    float: right;
+    padding-right: 55px;
+  }
+.slide1{
+  padding-top: 40px;
+  .headline{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    width:100%;
+    h1{
+      float:none;
+      width: 100%;
+      span{
+        display: inline-block;
+        float:none;
+      }
+    }
+  }
+}
+
+}
