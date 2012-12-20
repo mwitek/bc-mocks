@@ -788,25 +788,40 @@ h2{
     float: right;
     padding-right: 55px;
   }
-.slide1{
-  padding-top: 40px;
-  .headline{
-    display: block;
-    overflow: hidden;
-    text-align: center;
-    width:100%;
-    h1{
-      float:none;
-      width: 100%;
-      span{
-        display: inline-block;
+  .categories,
+  .slide1{
+    padding-top: 40px;
+    .headline{
+      display: block;
+      overflow: hidden;
+      text-align: center;
+      width:100%;
+      h1{
         float:none;
+        width: 100%;
+        span{
+          display: inline-block;
+          float:none;
+        }
+      }
+    }
+    .img_grid,
+    .bursty-logos{
+      left: 50px;
+      position: relative;
+      top:2px;
+      width: 430px;
+      img{
+        background: #ffffff;
+        display: inline-block;
+        position: relative;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+        margin: 5px;
       }
     }
   }
 }
 
-}
 
 .img_grid{
   float: left;
@@ -818,9 +833,6 @@ h2{
 }
 
 .categories {
-  h1{
-
-  }
   form{
     margin-left: 40px;
     margin-top: 40px;

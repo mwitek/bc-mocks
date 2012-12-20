@@ -965,19 +965,40 @@ h2 {
 .v99 form {
   float: right;
   padding-right: 55px; }
+.v99 .categories,
 .v99 .slide1 {
   padding-top: 40px; }
+  .v99 .categories .headline,
   .v99 .slide1 .headline {
     display: block;
     overflow: hidden;
     text-align: center;
     width: 100%; }
+    .v99 .categories .headline h1,
     .v99 .slide1 .headline h1 {
       float: none;
       width: 100%; }
+      .v99 .categories .headline h1 span,
       .v99 .slide1 .headline h1 span {
         display: inline-block;
         float: none; }
+  .v99 .categories .img_grid,
+  .v99 .categories .bursty-logos,
+  .v99 .slide1 .img_grid,
+  .v99 .slide1 .bursty-logos {
+    left: 50px;
+    position: relative;
+    top: 2px;
+    width: 430px; }
+    .v99 .categories .img_grid img,
+    .v99 .categories .bursty-logos img,
+    .v99 .slide1 .img_grid img,
+    .v99 .slide1 .bursty-logos img {
+      background: #ffffff;
+      display: inline-block;
+      position: relative;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+      margin: 5px; }
 
 .img_grid {
   float: left;
